@@ -218,6 +218,9 @@ label{
     left: 4px;
     top: 4px;
 }
+.hamburger:active{
+    transform: rotate(10deg);
+}
 .cross{
     margin-top: 1px;
     margin-left: -5px;
