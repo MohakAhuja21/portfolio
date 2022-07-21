@@ -211,9 +211,6 @@ label{
     .about{
         font-size: 23px;
     }
-    .devInfo{
-        justify-content:flex-end
-    }
 }
 /* hamburger menu */
 .hamburger{
@@ -222,8 +219,8 @@ label{
     top: 4px;
 }
 .cross{
-    margin-left: 207px;
     margin-top: 1px;
+    margin-left: -5px;
 }
 #button1,#button2{
     background-color: transparent;
@@ -246,7 +243,7 @@ div .social{
 }
 /* about section */
 .section_title{
-    margin-top: 40px;
+    margin-top: 20px;
 }
 .section_subtitle{
     display: block;
