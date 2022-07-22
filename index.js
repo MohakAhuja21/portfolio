@@ -1,3 +1,4 @@
+// script to toggle sidebar 
 document.querySelector('.cross').style.display="none";
 function toggleSidebar(){
     document.querySelector(".sidebar").classList.toggle("sidebarGo"); 
@@ -10,9 +11,4 @@ function toggleSidebar(){
         document.querySelector(".cross").style.display='inline'
     }
 }
-let button=document.querySelector('.button');
-
-button.addEventListener("click",()=>{
-    button.classList.add("active");
-    console.log("button pressed");
-})
+// script for closing side navigation bar by clicking anywhere on the page

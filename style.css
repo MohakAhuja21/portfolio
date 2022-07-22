@@ -1,10 +1,10 @@
-
 *{
     font-family: 'Noto Sans Mono', monospace;
     margin: 0;
     padding: 0;
     text-transform: capitalize;
 }
+/* SIDE NAVBAR */
 .sidebar{   
     transition: all 0.2s ease;
     background-color: whitesmoke;
@@ -28,68 +28,28 @@
     list-style-type: none;
     padding-top: 35px;
 }
-.buttons button{
-    margin-right: 5px;
-    font-size: large;
-    margin-top: 16px;
+/* hamburger menu-> part of side navigation bar only ! */
+.hamburger{
+    position: absolute;
+    left: 4px;
+    top: 4px;
+}
+.hamburger:active{
+    transform: rotate(10deg);
+}
+.ham{
+    margin-top: 3px;
+    margin-left: 1px;
+}
+.cross{
+    margin-top: 3px;
+    margin-left: 1px;
+}
+#button1,#button2{
+    background-color: transparent;
+    border: 0;
     cursor: pointer;
-    background-color: #0362cc;
-    color: white;
-    border: 1px solid transparent;
-    border-radius: 5px;
-    padding: 10px 30px;
-    box-shadow: 2px 5px 10px #0156b3;
-    transition: all 0.1s ease;
-}
-.buttons button:active{
-    transform: scale(0.98);
-    box-shadow: 2px 5px 10px #96c8f6;
-}
-.container{
-    display: flex;
-}
-.main{
-    margin: auto; 
-    width: 90vw;
-}
-.infoContainer{
-    /* background-color: cornflowerblue; */
-    height: 60vh;
-    width: 60vw;
-    margin: auto;
-    margin-top:60px;
-    display: flex;
-    justify-content: space-around;
-}
-.devPic img{
-    width: 100%;
-    max-width: 49vh;
-    transition: 1s;
-    cursor: url(source/images/icons/search.png),auto;
-}
-.devPic img:hover{
-    transform: scale(1.1);
-}
-.devInfo{
-    display:flex;
-    flex-direction: column;
-    justify-content:center;
-}
-.hello,
-.name,
-.about{
-    font-size: 32px;
-}
-.name::first-letter{
-    color: #0362cc;
-    font-size: 4rem;
-    font-weight: bold;
-}
-.buttons button a{
-    color: white;
-    text-decoration: none;
-}
-/* search bar -> navigation */
+} 
 input[type="text1"]{
     margin-top: 30px;
     padding: 5px;
@@ -101,9 +61,6 @@ input[type="text1"]{
 input[type="text1"]:hover{
     padding-right: 10px;
 }
-/* input[type="text"]::-ms-clear{
-    display: none;
-} */
 #search{
     background-image: url(http://www.clker.com/cliparts/n/C/y/X/u/K/search-icon.svg);
     background-size: 40px;
@@ -125,13 +82,28 @@ input[type="text1"]:invalid{
     55%{transform: translateX(-4px);}
     75%{transform: translateX(4px);}
 }
-/* contact form */
+/* input[type="text"]::-ms-clear{
+    display: none;
+} */
+/* social buttons -> part of side navigation bar only ! */
+.social{
+    display: flex;
+    margin-top: 30px;
+}
+.social-btn{
+    cursor: pointer;
+}
+div .social{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+/* CONTACT FORM */
 .label-text{
     font-size: 21px;
-
 }
 .contact-section{
-    /* background-color: whitesmoke; */
     background-size: cover;
     padding: 50px 0;
 }
@@ -140,17 +112,9 @@ input[type="text1"]:invalid{
     color: #0156b3;
     font-size: 40px;
 }
-.border{
-    height: 4px;
-    padding-right: 90px;
-    background: #0362cc;
-    width: 100px;
-    margin: 11px auto;
-}
 .contact-form{
     margin: auto;
     max-width: 600px;
-    /* width: fit-content;   */
     overflow: hidden;
     padding: 17px;
 }
@@ -196,62 +160,4 @@ label,input{
 }
 label{
     margin-bottom:20px;
-}
-/* responsive */
-@media (max-width: 1100px){
-    .devPic{
-        display: none;
-    }
-    .hello{
-        font-size: 30px;
-    }
-    .name{
-        font-size: 29px;
-    }
-    .about{
-        font-size: 23px;
-    }
-}
-/* hamburger menu */
-.hamburger{
-    position: absolute;
-    left: 4px;
-    top: 4px;
-}
-.hamburger:active{
-    transform: rotate(10deg);
-}
-.cross{
-    margin-top: 1px;
-    margin-left: 1px;
-}
-#button1,#button2{
-    background-color: transparent;
-    border: 0;
-    cursor: pointer;
-} 
-
-/* social buttons */
-.social{
-    display: flex;
-    margin-top: 30px;
-}
-.social-btn{
-    cursor: pointer;
-}
-div .social{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
-/* about section */
-.section_title{
-    margin-top: 20px;
-}
-.section_subtitle{
-    display: block;
-}
-.section_title,
-.section_subtitle{
-    text-align: center;
 }
