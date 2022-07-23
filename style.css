@@ -11,7 +11,7 @@
     /* backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(5px); */
     background-color: black;
-    /* width: 45vh; */
+    /* width: 40vh; */
     height: 100vh;
     position: absolute;
 }
@@ -106,6 +106,12 @@ input[type="text1"]:invalid{
     padding-top: 10px;
     padding-left: 9px;
     padding-right: 6px;
+}
+.social-btn-1:hover{
+    background-color: #179cf0;
+}
+.social-btn-2:hover{
+    background-color: #007ab9;
 }
 .social-btn-1:active,
 .social-btn-2:active,
@@ -267,6 +273,10 @@ transform: translateY(60px);
 .btn-text{
     font-weight: bold;
     margin-left: 8px;
+}
+.btn-text a{
+    color: white;
+    text-decoration:none;
 }
 /* ABOUT SECTION */
 .about{
