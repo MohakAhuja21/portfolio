@@ -3,8 +3,10 @@ document.querySelector('.cross').style.display="none";
 function toggleSidebar(){
     document.querySelector(".sidebar").classList.toggle("sidebarGo"); 
     if (document.querySelector(".sidebar").classList.contains("sidebarGo")){
+        // used for removing/replacing a element
         document.querySelector(".ham").style.display='inline'
         document.querySelector(".cross").style.display='none'
+        // download button removed/replaced
         document.querySelector(".button").style.display='inline'
 
     }
