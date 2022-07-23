@@ -11,4 +11,19 @@ function toggleSidebar(){
         document.querySelector(".cross").style.display='inline'
     }
 }
-// script for closing side navigation bar by clicking anywhere on the page
+// script for animating download CV button
+let button = document.querySelector(".button");
+button.addEventListener("click",()=>{
+    button.classList.add("active");
+
+
+    setTimeout(()=>{
+        button.classList.remove("active");
+        document.querySelector("i").classList.replace('bx-cloud-download','bx-check-double');
+        document.querySelector(".btn-text").innerHTML="completed";
+    },6000)//it will remove active button class after 6s.
+
+
+
+
+})

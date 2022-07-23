@@ -7,9 +7,11 @@
 /* SIDE NAVBAR */
 .sidebar{   
     transition: all 0.2s ease;
-    background-color: whitesmoke;
+    background-color: rgba(0,0,0,0.2);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(5px);
     /* width: 45vh; */
-    height: 120vh;
+    height: 100vh;
     position: absolute;
 }
 .sidebarGo{
@@ -18,31 +20,35 @@
 }
 .sidebar li a{
     text-decoration: none;
-    color: #0156b3;
-    font-size: 47px;
+    color: white;
+    font-size: 45px;
+    opacity: 0.8;
+}
+.sidebar li a:hover{
+    opacity: 1;
 }
 .sidebar nav{
     padding: 25px;
 }
 .sidebar li{
     list-style-type: none;
-    padding-top: 35px;
+    padding-top: 30px;
 }
 /* hamburger menu-> part of side navigation bar only ! */
 .hamburger{
     position: absolute;
-    left: 4px;
-    top: 4px;
+    left: 3px;
+    top: 3px;
 }
 .hamburger:active{
     transform: rotate(10deg);
 }
 .ham{
-    margin-top: 3px;
+    margin-top: 1px;
     margin-left: 1px;
 }
 .cross{
-    margin-top: 3px;
+    margin-top: 1px;
     margin-left: 1px;
 }
 #button1,#button2{
@@ -88,17 +94,44 @@ input[type="text1"]:invalid{
 /* social buttons -> part of side navigation bar only ! */
 .social{
     display: flex;
-    margin-top: 30px;
+    margin-top: 23px;
 }
 .social-btn{
     cursor: pointer;
+}
+.social-btn-1{
+    background: white;
+    border-radius: 30px;
+    padding-top: 10px;
+    padding-left: 9px;
+    padding-right: 6px;
+}
+.social-btn-1:active,
+.social-btn-2:active,
+.social-btn-3:active{
+    transform: scale(0.98);
+    box-shadow: inset 2px -1px 7px black;
+}
+.social-btn-2{
+     background: white;
+    border-radius: 30px;
+    padding-top: 10px;
+    padding-left: 9px;
+    padding-right: 6px;
+}
+.social-btn-3{
+     background: white;
+    border-radius: 22px;
+    /* padding: 5px 1px 5px 10px; */
+    padding-top: 10px;
+    padding-left: 9px;
+    padding-right: 6px;
 }
 div .social{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
 }
-
 /* CONTACT FORM */
 .label-text{
     font-size: 21px;
@@ -139,25 +172,113 @@ input[type="tel"]{
 textarea{
     resize: none;
 }
-.btn{
-    font-size: large;
-    float:right;
-    cursor: pointer;
-    background-color: #0362cc;
-    color: white;
-    border: 1px solid transparent;
-    border-radius: 5px;
-    padding: 9px 21px;
-    box-shadow: 2px 5px 10px #0156b3;
-    transition: all 0.1s ease;
-}
-.btn:active{
-    transform: scale(0.98);
-    box-shadow: 2px 5px 10px #96c8f6;
-}
 label,input{
     display: block;
 }
 label{
     margin-bottom:20px;
+}
+/* SECTION'S */
+section{
+    background-color: greenyellow;
+    height: 500px;
+    border: 1px solid black;
+}
+/* HERO SECTION -> HOME */
+.hero{
+    background-color: #FA292A;
+    height: 100vh;
+}
+.hero-area{
+    display: flex;
+    justify-content: center;
+    /* flex-direction: column; */
+    align-items: center;
+    height: 60%;
+    margin: auto;
+}
+.hero-text{
+    margin-top: 60px;
+    margin-left: 30px;
+}
+h1{
+    font-size: calc(4.9rem + (6 - 4.8) * (100vw - 32rem)/ (90 - 32));
+    margin: 0;
+}
+p{
+    /* text-decoration: underline; */
+    width: fit-content;
+    text-decoration-thickness: 1px;
+    border-bottom-style: ridge;
+    margin: 0x;
+    border-bottom-width: 3.1px;
+    color: whitesmoke;
+    font-size: calc(4rem + (9 - 6) * (50vw - 40rem)/ (130 - 90));
+}
+/* DOWNLOAD CV BUTTON */
+.button{
+    margin: auto;
+    cursor: pointer;
+    top: 60%;
+    left: 50%;
+    height: 50px;
+    width: 200px;
+    background-color: black;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    transform: translate(-50%, -50%);
+    position: absolute;
+    overflow: hidden;
+    border-radius: 14px;
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+@media only screen and (max-width: 600px)
+.button.active{
+    height: 20px;
+    width: 180px;
+}
+.content{
+    height: 100%;
+    width: 100%;
+    font-size: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    transition-delay: 0.2s;
+}
+.button.active .content{
+transform: translateY(60px);
+}
+.button.active:before{
+    animation: layer 6s ease-in-out forwards;
+}
+@keyframes layer{
+    100%{left: 0%;}
+}
+.button::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #333;
+    top:0;
+    left: -100%;
+    border-radius: 14px;
+}
+
+.btn-content i{}
+.btn-text{
+    font-weight: bold;
+    margin-left: 8px;
+}
+/* ABOUT SECTION */
+.about{
+    background-color: #B89F5D;
+}
+/* FOOTER */
+footer{
+    background-color: #5A7670;
+    height: 500px;
+    border: 1px solid black;
 }
