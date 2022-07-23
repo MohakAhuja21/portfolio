@@ -28,14 +28,8 @@ button.addEventListener("click",()=>{
     },6000)//it will remove active button class after 6s.
 })
 
-// 
-const downloadBtn= document.querySelector(".button");
-const countDown= document.querySelector(".countdown");
-var timeLeft=10;
-downloadBtn.addEventListener("click",()=>{
-    // 
-    var downloadTimer=setInterval(function timeCount(){
-        timeLeft -=1;
-        countdown.innerHTML="countdown will began in <span>'+ timeLeft +'</span> seconds."
-    });
-})
+
+// changing colors by pressing button
+function changeColor(e){
+    document.body.style.background=e;
+}
