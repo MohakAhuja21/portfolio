@@ -5,10 +5,13 @@ function toggleSidebar(){
     if (document.querySelector(".sidebar").classList.contains("sidebarGo")){
         document.querySelector(".ham").style.display='inline'
         document.querySelector(".cross").style.display='none'
+        document.querySelector(".button").style.display='inline'
+
     }
     else{
         document.querySelector(".ham").style.display='none'
         document.querySelector(".cross").style.display='inline'
+        document.querySelector(".button").style.display='none'
     }
 }
 // script for animating download CV button
