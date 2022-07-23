@@ -221,8 +221,8 @@ p{
     cursor: pointer;
     top: 68%;
     left: 50%;
-    height: 50px;
-    width: 270px;
+    height: 60px;
+    width: 275px;
     background-color: black;
     box-shadow: 0 5px 10px rgba(0,0,0,0.2);
     transform: translate(-50%, -50%);
