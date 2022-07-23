@@ -219,10 +219,10 @@ p{
 .button{
     margin: auto;
     cursor: pointer;
-    top: 65%;
+    top: 68%;
     left: 50%;
     height: 50px;
-    width: 200px;
+    width: 270px;
     background-color: black;
     box-shadow: 0 5px 10px rgba(0,0,0,0.2);
     transform: translate(-50%, -50%);
