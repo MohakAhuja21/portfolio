@@ -209,7 +209,7 @@ section{
     margin-left: 30px;
 }
 .hero-text-header{
-    font-size: 16px;
+    font-size: 9px;
     color: darkslategray
 }
 h1{
@@ -230,7 +230,7 @@ p{
 .button{
     margin: auto;
     cursor: pointer;
-    top: 68%;
+    top: 77%;
     left: 50%;
     height: 60px;
     width: 275px;
