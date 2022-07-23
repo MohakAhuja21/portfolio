@@ -74,14 +74,14 @@ input[type="text1"]:hover{
     background-position-y: center;
     background-position-x: right;
 }
-input[type="text1"]:invalid{
-    animation: shake 300ms;
-}
 ::-webkit-input-placeholder{
     color: transparent;
 }
 :hover::-webkit-input-placeholder{
     color: rgb(129, 129, 129);
+}
+input[type="text1"]:invalid{
+    animation: shake 300ms;
 }
 @keyframes shake{
     25%{transform: translateX(5px);}
@@ -219,7 +219,7 @@ p{
 .button{
     margin: auto;
     cursor: pointer;
-    top: 60%;
+    top: 65%;
     left: 50%;
     height: 50px;
     width: 200px;
@@ -230,11 +230,6 @@ p{
     overflow: hidden;
     border-radius: 14px;
     transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-@media only screen and (max-width: 600px)
-.button.active{
-    height: 20px;
-    width: 180px;
 }
 .content{
     height: 100%;
