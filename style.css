@@ -362,44 +362,9 @@ transform: translateY(60px);
     }
 }
 
-
 /* FOOTER */
 footer{
     background-color: #5A7670;
     height: 500px;
     border: 1px solid black;
 }
-/* color changing buttons
-.btn-violet,
-.btn-crimson,
-.btn-grey{
-    background-color: black;
-    color: white;
-    border: 1px solid transparent;
-    padding: 18px;
-    border-radius: 14px;
-    box-shadow: 2px 4px 8px rgb(110, 109, 109);
-    cursor: pointer;
-    transition: all 0.4s ease-in-out;
-}
-.btn-violet:active,
-.btn-crimson:active,
-.btn-grey:active{
-    transform: scale(0.98);
-    padding-bottom: 22px;
-}
-.btn-violet:hover{
-    background-color: blueviolet;
-    padding: 24px;
-    box-shadow: inset 2px 6px 8px white;
-}
-.btn-crimson:hover{
-    background-color: crimson;
-    padding: 24px;
-    box-shadow: inset 2px 6px 8px white;
-}
-.btn-grey:hover{
-    background-color: dimgrey;
-    padding: 24px;
-    box-shadow: inset 2px 6px 8px white;
-} */
