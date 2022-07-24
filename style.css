@@ -96,8 +96,11 @@ input[type="text1"]:invalid{
 .social-btn{
     cursor: pointer;
 }
-.social-btn-1{
+.social-btn-1:hover{
     background-color: #179cf0;
+}
+.social-btn-1{
+    background-color: white;
     border-radius: 30px;
     padding-top: 10px;
     padding-left: 9px;
@@ -108,8 +111,11 @@ input[type="text1"]:invalid{
 .social-btn-3:active{
     transform: scale(0.98);
 }
-.social-btn-2{
+.social-btn-2:hover{
     background-color: #007ab9;
+}
+.social-btn-2{
+    background-color: white;
     border-radius: 30px;
     padding-top: 10px;
     padding-left: 9px;
