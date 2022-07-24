@@ -28,7 +28,6 @@ button.addEventListener("click",()=>{
     },6000)//it will remove active button class after 6s.
 })
 
-
 // changing colors by pressing button
 // function changeColor(e){
 //     document.body.style.background=e;

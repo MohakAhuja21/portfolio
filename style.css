@@ -224,7 +224,8 @@ section{
 }
 .hero-text h1::first-letter{
     font-size: calc(7.9rem + (6 - 4.8) * (100vw - 32rem)/ (90 - 32));
-    color: rgba(255, 253, 253, 0.709);
+    color: white;
+    text-shadow: 2px 4px 8px rgb(110, 109, 109);
 }
 .hero-text-header{
     font-size: 9px;
