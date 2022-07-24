@@ -133,17 +133,22 @@ div .social{
     flex-direction: column;
     align-items: flex-end;
 }
+
 /* CONTACT FORM */
 .label-text{
+    color: white;
     font-size: 21px;
 }
 .contact-section{
+    height: 100vh;
+    background-color: #242732;
     background-size: cover;
     padding: 50px 0;
 }
 .contact-section h1{
+    color: rgba(255, 253, 253, 0.709);
     text-align: center;
-    color: #0156b3;
+    /* color: #0156b3; */
     font-size: 40px;
 }
 .contact-form{
@@ -167,9 +172,25 @@ input[type="tel"]{
     border: 2px solid #0156b3;
 }
 .contact-form-text:focus{
-    box-shadow: 0 2px 8px 1px #34495e;
+    box-shadow: 0 8px 12px 1px #34495e;
+}
+.contact-form .btn:active{
+    transform: scale(0.98);
+}
+.contact-form .btn{
+    /* display: flex; */
+    border: 0;
+    float: right;
+    background-color: black;
+    color: white;
+    border-radius: 14px;
+    box-shadow: 2px 4px 8px rgb(110, 109, 109);
+    padding: 20px;
+    cursor: pointer;
+    font-size: 26px;
 }
 textarea{
+    border-radius: 5px;
     resize: none;
 }
 label,input{
@@ -178,14 +199,16 @@ label,input{
 label{
     margin-bottom:20px;
 }
+
 /* SECTION'S */
 section{
     height: 500px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 /* HERO SECTION -> HOME */
 .hero{
-    background-color: darkviolet;
+    /* background-color: darkviolet; */
+    background-color: #242732;
     height: 100vh;
 }
 .hero-area{
@@ -200,7 +223,7 @@ section{
     margin-left: 30px;
 }
 .hero-text h1::first-letter{
-    font-size: calc(6.9rem + (6 - 4.8) * (100vw - 32rem)/ (90 - 32));
+    font-size: calc(7.9rem + (6 - 4.8) * (100vw - 32rem)/ (90 - 32));
     color: rgba(255, 253, 253, 0.709);
 }
 .hero-text-header{
@@ -208,6 +231,7 @@ section{
     color: darkslategray
 }
 h1{
+    color: rgba(255, 253, 253, 0.709);
     font-size: calc(4.9rem + (6 - 4.8) * (100vw - 32rem)/ (90 - 32));
     margin: 0;
 }
@@ -283,7 +307,12 @@ transform: translateY(60px);
     justify-content: center;
     align-items: center;
 }
+.about-img:hover{
+    cursor: url('source/images/icons/search.png'),auto;
+    transform: scale(1.1);
+}
 .about-img{
+    transition: 1s;
     height: auto;
     width: 600px;
     max-width: 100%;
@@ -293,7 +322,7 @@ transform: translateY(60px);
     width: 550px;
     max-width: 100%;
     padding: 0 10px;
-    color: white;
+    /* color: white; */
 }
 .about-content{
     width: 1280px;
@@ -305,10 +334,12 @@ transform: translateY(60px);
     justify-content: space-around;
 }
 .about-text h2{
+    color: rgba(255, 253, 253, 0.709);
     font-size: 85px;
     margin-bottom: 20px;
 }
 .about-text p{
+    color: white;
     font-size: 18px;
     line-height: 28px;
     letter-spacing: 1px;
@@ -332,28 +363,13 @@ transform: translateY(60px);
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* FOOTER */
 footer{
     background-color: #5A7670;
     height: 500px;
     border: 1px solid black;
 }
-/* color changing buttons */
+/* color changing buttons
 .btn-violet,
 .btn-crimson,
 .btn-grey{
@@ -386,4 +402,4 @@ footer{
     background-color: dimgrey;
     padding: 24px;
     box-shadow: inset 2px 6px 8px white;
-}
+} */
