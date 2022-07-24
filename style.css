@@ -97,17 +97,11 @@ input[type="text1"]:invalid{
     cursor: pointer;
 }
 .social-btn-1{
-    background: white;
+    background-color: #179cf0;
     border-radius: 30px;
     padding-top: 10px;
     padding-left: 9px;
     padding-right: 6px;
-}
-.social-btn-1:hover{
-    background-color: #179cf0;
-}
-.social-btn-2:hover{
-    background-color: #007ab9;
 }
 .social-btn-1:active,
 .social-btn-2:active,
@@ -115,14 +109,14 @@ input[type="text1"]:invalid{
     transform: scale(0.98);
 }
 .social-btn-2{
-     background: white;
+    background-color: #007ab9;
     border-radius: 30px;
     padding-top: 10px;
     padding-left: 9px;
     padding-right: 6px;
 }
 .social-btn-3{
-     background: white;
+    background: white;
     border-radius: 22px;
     padding-top: 10px;
     padding-left: 9px;
@@ -185,9 +179,7 @@ section{
 }
 /* HERO SECTION -> HOME */
 .hero{
-    /* background-color: darkviolet; */
-    background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(104,251,111,1) 19%, rgba(0,255,145,1) 100%);
+    background-color: darkviolet;
     height: 100vh;
 }
 .hero-area{
