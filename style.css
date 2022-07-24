@@ -266,8 +266,6 @@ transform: translateY(60px);
     left: -100%;
     border-radius: 14px;
 }
-
-.btn-content i{}
 .btn-text{
     font-weight: bold;
     margin-left: 8px;
