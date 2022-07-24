@@ -30,6 +30,6 @@ button.addEventListener("click",()=>{
 
 
 // changing colors by pressing button
-function changeColor(e){
-    document.body.style.background=e;
-}
+// function changeColor(e){
+//     document.body.style.background=e;
+// }
