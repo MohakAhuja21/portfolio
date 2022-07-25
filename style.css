@@ -310,11 +310,12 @@ transform: translateY(60px);
     transform: scale(1.1);
 }
 .about-img{
-    transition: 1s;
+    transition: 500ms;
     height: auto;
     width: 600px;
+    border-radius: 23% 77% 13% 87% / 76% 16% 84% 24%  ;
     max-width: 100%;
-    border-radius: 150px;
+    /* border-radius: 150px; */
 }
 .about-text{
     margin-left: 20px;
