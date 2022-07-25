@@ -355,7 +355,7 @@ transform: translateY(60px);
 }
 @media screen and (max-width:452px){
     .about-text h2{
-        font-size: 63px;
+        font-size: 60px;
     }
 }
 
