@@ -200,11 +200,6 @@ label{
     margin-bottom:20px;
 }
 
-/* SECTION'S */
-section{
-    height: 500px;
-    /* border: 1px solid black; */
-}
 /* HERO SECTION -> HOME */
 .hero{
     /* background-color: darkviolet; */
@@ -363,9 +358,47 @@ transform: translateY(60px);
     }
 }
 
+/* tech known logo */
+.logo{
+    background-color: #242732;
+}
+.logoGrid{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    grid-template-columns: repeat(auto-fill,minmax(150px,1fr));
+    grid-gap: 2rem;
+    width: 100%;
+}
+.logoGrid_item{
+    display: grid;
+    list-style-type: none;
+}
+.logoGrid_item img{
+    object-fit: cover;
+    filter: grayscale(100%) contrast(25%);
+}
+.logoGrid img:hover{
+    filter: grayscale(0) contrast(100%);
+}
+@media screen and (max-width: 500px){
+    .logoGrid img{
+        width: 13vh;
+    }
+    .logoGrid{
+        grid-gap: 1rem;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+
+
+
+
 /* FOOTER */
 footer{
-    background-color: #5A7670;
+    /* background-color: #5A7670; */
     height: 500px;
     border: 1px solid black;
 }
