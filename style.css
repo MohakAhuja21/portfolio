@@ -18,18 +18,18 @@
 .sidebar li a{
     text-decoration: none;
     color: white;
-    font-size: 45px;
+    font-size: 42px;
     opacity: 0.8;
 }
 .sidebar li a:hover{
     opacity: 1;
 }
 .sidebar nav{
-    padding: 25px;
+    padding: 20px;
 }
 .sidebar li{
     list-style-type: none;
-    padding-top: 30px;
+    padding-top: 24px;
 }
 /* hamburger menu-> part of side navigation bar only ! */
 .hamburger{
@@ -54,7 +54,7 @@
     cursor: pointer;
 } 
 input[type="text1"]{
-    margin-top: 30px;
+    margin-top: 25px;
     padding: 5px;
     border: 2px solid #0156b3;
     border-radius: 5px;
@@ -91,7 +91,7 @@ input[type="text1"]:invalid{
 /* social buttons -> part of side navigation bar only ! */
 .social{
     display: flex;
-    margin-top: 23px;
+    margin-top: 19px;
 }
 .social-btn{
     cursor: pointer;
