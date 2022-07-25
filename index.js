@@ -13,6 +13,7 @@ function toggleSidebar(){
     else{
         document.querySelector(".ham").style.display='none'
         document.querySelector(".cross").style.display='inline'
+         // download button removed/replaced
         document.querySelector(".button").style.display='none'
     }
 }

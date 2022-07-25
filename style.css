@@ -140,15 +140,14 @@ div .social{
     font-size: 21px;
 }
 .contact-section{
-    height: 100vh;
     background-color: #242732;
+    height: 100vh;
     background-size: cover;
     padding: 50px 0;
 }
 .contact-section h1{
     color: rgba(255, 253, 253, 0.709);
     text-align: center;
-    /* color: #0156b3; */
     font-size: 40px;
 }
 .contact-form{
@@ -315,6 +314,8 @@ transform: translateY(60px);
     border-radius: 150px;
 }
 .about-text{
+    margin-left: 20px;
+    margin-right: 20px;
     width: 550px;
     max-width: 100%;
     padding: 0 10px;
@@ -354,7 +355,7 @@ transform: translateY(60px);
 }
 @media screen and (max-width:452px){
     .about-text h2{
-        font-size: 67px;
+        font-size: 63px;
     }
 }
 
@@ -392,10 +393,6 @@ transform: translateY(60px);
         justify-content: space-evenly;
     }
 }
-
-
-
-
 
 /* FOOTER */
 footer{
