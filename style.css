@@ -204,7 +204,7 @@ label{
 .hero{
     /* background-color: darkviolet; */
     background-color: #242732;
-    height: 100vh;
+    height: 85vh;
 }
 .hero-area{
     display: flex;
@@ -375,6 +375,7 @@ transform: translateY(60px);
     list-style-type: none;
 }
 .logoGrid_item img{
+    width: 15vh;
     object-fit: cover;
     filter: grayscale(100%) contrast(25%);
 }
