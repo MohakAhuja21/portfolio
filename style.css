@@ -389,7 +389,7 @@ transform: translateY(60px);
     .logoGrid{
         grid-gap: 1rem;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
     }
 }
 
