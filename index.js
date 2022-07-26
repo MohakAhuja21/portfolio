@@ -26,6 +26,7 @@ button.addEventListener("click",()=>{
         // download will start automatically after animation will be done !
         let download_href="source/CV/blank pdf.pdf";
         window.location.href=download_href;
+        alert("download completed in background. check notification !");
     },6000)//it will remove active button class after 6s.
 })
 
