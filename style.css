@@ -2,8 +2,46 @@
     font-family: 'Noto Sans Mono', monospace;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
     text-transform: capitalize;
 }
+
+/* scroll to top  */
+.to-top{
+    background-color: white;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 15px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    /* blur */
+    filter: blur(0.1px);
+    background-color: rgba(255, 255, 255, 0.724);
+    text-decoration: none;
+    color: black;
+    opacity: 0;
+    transition: all 0.3s;
+    pointer-events: none;
+}
+.to-top.active{
+    opacity: 1;
+    pointer-events: auto;
+    bottom: 30px;
+}
+
+
+
+
+
+
+
+
+
 /* SIDE NAVBAR */
 .sidebar{   
     transition: all 0.2s ease;
@@ -318,11 +356,11 @@ transform: translateY(60px);
     /* border-radius: 150px; */
 }
 .about-text{
-    margin-left: 20px;
-    margin-right: 20px;
+    /* margin-left: 20px;
+    margin-right: 20px; */
     width: 550px;
     max-width: 100%;
-    padding: 0 10px;
+    padding: 0 30px;
     /* color: white; */
 }
 .about-content{
@@ -342,7 +380,7 @@ transform: translateY(60px);
 .about-text p{
     color: white;
     font-size: 18px;
-    line-height: 28px;
+    line-height: 30px;
     letter-spacing: 1px;
 }
 /* making about section responsive */

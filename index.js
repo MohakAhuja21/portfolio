@@ -34,12 +34,13 @@ button.addEventListener("click",()=>{
 //     document.body.style.background=e;
 // }
 
-// added section id and then provided js to navigation bar links for smooth scrolling to that specific page
-document.querySelectorAll('.sidebar li a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click',function(e){
-        e.preventDefault();//without preventDefault below code will not work and it will not function smoothly.
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior:'smooth'
-        });
-    });
-});
+// function to bring to the top of website
+const toTop=document.querySelector('.to-top');
+window.addEventListener('scroll',()=>{
+    if (window.pageYOffset>100) {
+        toTop.classList.add('active');        
+    }
+    else{
+        toTop.classList.remove('active');
+    }
+})
