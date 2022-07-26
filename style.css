@@ -249,7 +249,7 @@ label{
 .hero-area{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;    
     height: 60%;
     margin: auto;
 }
@@ -269,8 +269,52 @@ label{
 h1{
     color: rgba(255, 253, 253, 0.709);
     font-size: calc(4.9rem + (6 - 4.8) * (100vw - 32rem)/ (90 - 32));
-    margin: 0;
+    margin: 0 auto;
+    position: relative;
 }
+/*  */
+h1::before,
+h1::after{
+    content: '';
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right:0;
+    position: absolute;
+    animation: typewriter 4s steps(24) forwards;
+}
+
+h1::before{
+    background-color: #242732;
+    animation: typewriter 3s steps(24) forwards;
+}
+h1::after{
+    width: 7px;
+    /* background-color: #242732; */
+    background: whitesmoke;
+    animation: typewriter 3s steps(24) forwards,
+    blink 4s steps(24) forwards;
+}
+@keyframes typewriter{
+    to{
+        left: 100%;
+    }
+}
+@keyframes blink{
+    to{
+        background: transparent;
+    }
+}
+
+
+
+
+
+
+
+
+
+
 .p1{
     width: fit-content;
     text-decoration-thickness: 1px;
