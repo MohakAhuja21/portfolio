@@ -40,4 +40,17 @@ window.addEventListener('scroll',()=>{
     }
 })
 
-// 
+// function to open a specific page when someone search through input[search] 
+function openPage(){
+    var x= document.getElementById('search').value;
+// if someone search for email it will open contact.html page
+    if (x=='email') {
+        window.open('/contact.html')
+    }
+    if (x=='graduation') {
+        window.open('/skills.html')
+    }
+    else{
+        alert("cannot find. Try typing 'graduation' or 'email'")
+    }
+}

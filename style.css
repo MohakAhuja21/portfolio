@@ -5,8 +5,7 @@
     scroll-behavior: smooth;
     text-transform: capitalize;
 }
-
-/* i don't want user to copy and paste from my website */
+/* i don't want user to copy and paste from my website [disable text selection]*/
 .prevent-select{
     /* standard */
     user-select: none;
