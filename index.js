@@ -8,6 +8,11 @@ function toggleSidebar(){
         document.querySelector(".cross").style.display='none'
         // download button removed/replaced
         document.querySelector(".button").style.display='inline'
+        // when sidebar is opened remove h1 element because it was blocking sidebar
+        document.querySelector('.hero-text h1').style.display='block'
+        // removed tech known logo as it was blocking the sidebar
+        document.querySelector(".logo").style.display='block'
+
 
     }
     else{
@@ -15,6 +20,11 @@ function toggleSidebar(){
         document.querySelector(".cross").style.display='inline'
          // download button removed/replaced
         document.querySelector(".button").style.display='none'
+        // when sidebar is closed view h1 element again
+        document.querySelector('.hero-text h1').style.display='none'
+        // view tech known logo back after closing sidebar
+        document.querySelector(".logo").style.display='none'
+
     }
 }
 // script for animating download CV button

@@ -35,13 +35,6 @@
 }
 
 
-
-
-
-
-
-
-
 /* SIDE NAVBAR */
 .sidebar{   
     transition: all 0.2s ease;
@@ -266,15 +259,15 @@ label{
     font-size: 9px;
     color: darkslategray
 }
-h1{
+.hero-text h1{
     color: rgba(255, 253, 253, 0.709);
     font-size: calc(4.9rem + (6 - 4.8) * (100vw - 32rem)/ (90 - 32));
     margin: 0 auto;
     position: relative;
 }
 /*  */
-h1::before,
-h1::after{
+.hero-text h1::before,
+.hero-text h1::after{
     content: '';
     top: 0;
     bottom: 0;
@@ -284,11 +277,11 @@ h1::after{
     animation: typewriter 4s steps(24) forwards;
 }
 
-h1::before{
+.hero-text h1::before{
     background-color: #242732;
     animation: typewriter 3s steps(24) forwards;
 }
-h1::after{
+.hero-text h1::after{
     width: 7px;
     /* background-color: #242732; */
     background: whitesmoke;
