@@ -34,12 +34,13 @@
     bottom: 30px;
 }
 
-
 /* SIDE NAVBAR */
 .sidebar{   
     transition: all 0.2s ease;
     background-color: black;
     height: 100vh;
+    /* added z-index because otherwise other things of home section/ other sections will overlap on sidebar */
+    z-index: 1;
     position: fixed;
 }
 .sidebar ul{
@@ -67,6 +68,7 @@
 }
 /* hamburger menu-> part of side navigation bar only ! */
 .hamburger{
+    z-index: 2;
     position: fixed;
     left: 3px;
     top: 3px;
@@ -259,6 +261,7 @@ label{
     font-size: 9px;
     color: darkslategray
 }
+/* animations -> h1 */
 .hero-text h1{
     color: rgba(255, 253, 253, 0.709);
     font-size: calc(4.9rem + (6 - 4.8) * (100vw - 32rem)/ (90 - 32));
@@ -298,15 +301,6 @@ label{
         background: transparent;
     }
 }
-
-
-
-
-
-
-
-
-
 
 .p1{
     width: fit-content;
