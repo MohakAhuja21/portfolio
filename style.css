@@ -6,6 +6,14 @@
     text-transform: capitalize;
 }
 
+/* i don't want user to copy and paste from my website */
+.prevent-select{
+    /* standard */
+    user-select: none;
+    /* safari */
+    -webkit-user-select: none;
+}
+
 /* scroll to top  */
 .to-top{
     background-color: white;
@@ -431,7 +439,6 @@ transform: translateY(60px);
         font-size: 60px;
     }
 }
-
 /* tech known logo */
 .logo{
     background-color: #242732;
