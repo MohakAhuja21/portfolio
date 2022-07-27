@@ -15,7 +15,6 @@ function toggleSidebar(){
 // script for animating download CV button
 let button = document.querySelector(".button");
 
-
 button.addEventListener("click",()=>{ 
     button.classList.add("active");
 
@@ -30,11 +29,6 @@ button.addEventListener("click",()=>{
     },6000)//it will remove active button class after 6s.
 })
 
-
-// changing colors by pressing button
-// function changeColor(e){
-//     document.body.style.background=e;
-// }
 
 // function to bring to the top of website
 const toTop=document.querySelector('.to-top');

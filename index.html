@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>website</title>
+    <!-- sweetAlert.js  -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <!-- box icons cdn link -->
     <link
       href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
@@ -24,7 +26,7 @@
         <nav>
           <ul>
             <li><a href="#home">home</a></li>
-            <li><a href="#">skills</a></li>
+            <li><a href="/skills.html">skills</a></li>
             <li><a href="/projects.html">project</a></li>
             <li><a href="#about">about</a></li>
             <li><a href="/contact.html">contact</a></li>
@@ -74,7 +76,7 @@
     <h1>mohak ahuja</h1>
     <p class="p1">frontend developer</p>
 
-    <div class="button">
+    <div class="button" id="sweetAlert">
       <div class="content">
         <i class='bx bx-cloud-download'></i>
       <span class="btn-text">download CV</span>
@@ -114,23 +116,14 @@
     </div>
   </div>
 </section>
-
-  <!-- <span class="hero-text-header">Set the appearance to your liking. There are no restrictions!</span>
-  <br><br>
-  <button id="btn-violet" class="btn-violet" onclick="changeColor('blueviolet')">violet</button>
-  <button class="btn-crimson" onclick="changeColor('crimson')">crimson</button>
-  <button class="btn-grey" onclick="changeColor('dimgrey')">grey</button>
-  <br>-->
   
 <!-- FOOTER -->
 <footer></footer>
 
-
+<!-- scroll to top button -->
 <a href="#" class="to-top">
   <i class='bx bxs-chevron-up'></i>
 </a>
-
-
   </body>
   <script src="index.js"></script>
 </html>
