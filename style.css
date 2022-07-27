@@ -5,6 +5,9 @@
     scroll-behavior: smooth;
     text-transform: capitalize;
 }
+
+/* dark theme -> experimental */
+
 /* i don't want user to copy and paste from my website [disable text selection]*/
 .prevent-select{
     /* standard */
@@ -243,7 +246,6 @@ label{
 
 /* HERO SECTION -> HOME */
 .hero{
-    /* background-color: darkviolet; */
     background-color: #242732;
     height: 85vh;
 }
@@ -581,3 +583,4 @@ background: linear-gradient(90deg, rgba(6,48,59,1) 0%, rgba(0,240,112,1) 100%, r
         width: 0%;
     }
 }
+/*  */

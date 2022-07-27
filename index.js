@@ -1,17 +1,33 @@
-// script to toggle sidebar 
+// removing cross icon from page
 document.querySelector('.cross').style.display="none";
+// script to toggle sidebar 
 function toggleSidebar(){
     document.querySelector(".sidebar").classList.toggle("sidebarGo"); 
     if (document.querySelector(".sidebar").classList.contains("sidebarGo")){
-        // used for removing/replacing a element
+        // removing/replacing an element
         document.querySelector(".ham").style.display='inline'
         document.querySelector(".cross").style.display='none'
     }
     else{
+        // removing/replacing an element
         document.querySelector(".ham").style.display='none'
         document.querySelector(".cross").style.display='inline'
     }
 }
+
+// experimental-> to be removed if not perfect //side navigation bar closing if closing anywhere on the page.
+const con=document.getElementById('container');
+container.onclick=function(){
+    console.log("working");
+    if (document.querySelector(".sidebar").classList.contains("sidebarGo")) {
+        (document.querySelector(".sidebarGo").classList.remove("sidebar"));
+       }
+       else{
+        document.querySelector(".sidebar").classList.toggle("sidebarGo"); 
+       }
+    }, true;
+// }
+
 // script for animating download CV button
 let button = document.querySelector(".button");
 
@@ -28,7 +44,6 @@ button.addEventListener("click",()=>{
         alert("download completed in background. check notification !");
     },6000)//it will remove active button class after 6s.
 })
-
 
 // function to bring to the top of website
 const toTop=document.querySelector('.to-top');
@@ -55,3 +70,9 @@ function openPage(){
         alert("cannot find. Try typing 'graduation' or 'email'")
     }
 }
+
+// dark mode button
+// var icon= document.getElementById('icon');
+// icon.onclick=function(){
+//     document.body.classList.toggle("dark-theme");
+// }
