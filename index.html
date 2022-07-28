@@ -80,7 +80,7 @@
   <div class="hero-area">
   <div class="hero-text prevent-select">
     <h1>mohak ahuja</h1>
-    <p class="p1">frontend developer</p>
+    <p class="p1"><span class="type"></span></p>
 
     <div class="button" id="sweetAlert">
       <div class="content">
@@ -128,8 +128,20 @@
 <a href="#" class="to-top">
   <i class='bx bxs-chevron-up'></i>
 </a>
-
-
   </body>
+
+  <!-- importing typed js -->
+  <script src="typed.js"></script>
+  <!-- script for typed js -->
+  <script>
+    var typed = new Typed('.type', {
+  strings: ['me ?', 
+            'frontend developer !'
+          ],
+  typeSpeed: 60,
+  backSpeed:60,
+  loop: true
+});
+  </script>
   <script src="index.js"></script>
 </html>
