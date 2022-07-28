@@ -17,11 +17,15 @@ function toggleSidebar(){
 
 // experimental-> to be removed if not perfect //side navigation bar closing if closing anywhere on the page.
 const con=document.getElementById('container');
+const sidebar=document.querySelector('.sidebar')
 container.onclick=function(){
     console.log("working");
     if (document.querySelector(".sidebar").classList.contains("sidebarGo")) {
-        (document.querySelector(".sidebarGo").classList.remove("sidebar"));
-       }
+        (sidebar.classList.contains("sidebarGo"))
+        sidebar.classlist.remove("sidebarGo");
+    }
+        // container.classList.contains("sidebarGo");
+        // (document.querySelector(".sidebarGo").classList.remove("sidebar"));
        else{
         document.querySelector(".sidebar").classList.toggle("sidebarGo"); 
         document.querySelector(".ham").style.display='inline'

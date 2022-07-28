@@ -134,9 +134,12 @@ input[type="text1"]:invalid{
 /* input[type="text"]::-ms-clear{
     display: none;
 } */
+
 /* social buttons -> part of side navigation bar only ! */
 .social{
     display: flex;
+    flex-direction: column;
+    align-items: flex-end;
     margin-top: 17px;
 }
 .social-btn{
@@ -173,11 +176,6 @@ input[type="text1"]:invalid{
     padding-top: 10px;
     padding-left: 9px;
     padding-right: 6px;
-}
-div .social{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
 }
 
 /* CONTACT FORM */
