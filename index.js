@@ -101,6 +101,13 @@ icon.onclick=function(){
     if (document.body.classList.contains('dark-theme')) {
         icon.src= "source/images/icons/sun-icon.png";
         localStorage.setItem('theme','dark');
+    // swal('we will remember your theme preference next time you open our website.');
+    swal({
+        text: "we will remember your theme preference next time you open our website",
+        icon: "success",
+        button: "ok",
+    });
+
     }
     else{
         icon.src="source/images/icons/moon-icon.png";
