@@ -444,14 +444,8 @@ transform: translateY(60px);
         justify-content: space-evenly;
     }
 }
-/* FOOTER */
-footer{
-    /* background-color: #5A7670; */
-    height: 500px;
-    border: 1px solid black;
-}
 /* 
-scrollbar
+scrollbar //experiment
 ::-webkit-scrollbar{
     width: 1em;
 }
