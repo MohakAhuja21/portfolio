@@ -24,6 +24,8 @@ container.onclick=function(){
        }
        else{
         document.querySelector(".sidebar").classList.toggle("sidebarGo"); 
+        document.querySelector(".ham").style.display='inline'
+        document.querySelector(".cross").style.display='none'     
        }
     }, true;
 // }
