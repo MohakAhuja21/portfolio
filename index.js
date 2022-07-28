@@ -77,11 +77,23 @@ function openPage(){
 
 // dark mode button
 var icon= document.getElementById('icon');
-
+icon.onclick=function(){
+    document.body.classList.toggle('dark-theme');
+    if (document.body.classList.contains('dark-theme')) {
+        icon.src= "source/images/icons/sun-icon.png";
+        localStorage.setItem('theme','dark');
+        var notyf = new Notyf({});
+notyf.success('we will save this theme as default for you 👍');
+}
+    else{
+        icon.src="source/images/icons/moon-icon.png";
+        localStorage.setItem('theme','light');
+    }
+}
 // local storage for setting the theme as default that is set by user
  //if localStorage theme value is null it will check and add this theme
-if (localStorage.getItem('theme')==null) { 
-    localStorage.setItem('theme','light')
+ if (localStorage.getItem('theme')==null) { 
+    localStorage.setItem('theme','light')  // value->light
 }
 // local data
 let localData= localStorage.getItem('theme'); //local data value will be light by default
@@ -93,24 +105,4 @@ if (localData=="light") {
 else if (localData=='dark') {
     icon.src="source/images/icons/sun-icon.png";
     document.body.classList.add("dark-theme"); 
-    
-}
-// value->light
-icon.onclick=function(){
-    document.body.classList.toggle('dark-theme');
-    if (document.body.classList.contains('dark-theme')) {
-        icon.src= "source/images/icons/sun-icon.png";
-        localStorage.setItem('theme','dark');
-    // swal('we will remember your theme preference next time you open our website.');
-    swal({
-        text: "we will remember your theme preference next time you open our website",
-        icon: "success",
-        button: "ok",
-    });
-
-    }
-    else{
-        icon.src="source/images/icons/moon-icon.png";
-        localStorage.setItem('theme','light');
-    }
 }

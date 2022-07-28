@@ -5,12 +5,13 @@
 
 .dark-theme{
     --primary-color: rgb(2,20,24);
-    --secondary-color: white;
+    --secondary-color: rgb(236, 234, 234);
 }
 
 #icon{
     cursor: pointer;
 }
+
 
 *{
     font-family: 'Noto Sans Mono', monospace;
@@ -412,6 +413,7 @@ transform: translateY(60px);
 }
 /* tech known logo */
 .logo{
+    cursor: no-drop;
     background-color: var(--primary-color);
 }
 .logoGrid{
