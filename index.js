@@ -24,8 +24,6 @@ container.onclick=function(){
         (sidebar.classList.contains("sidebarGo"))
         sidebar.classlist.remove("sidebarGo");
     }
-        // container.classList.contains("sidebarGo");
-        // (document.querySelector(".sidebarGo").classList.remove("sidebar"));
        else{
         document.querySelector(".sidebar").classList.toggle("sidebarGo"); 
         document.querySelector(".ham").style.display='inline'
@@ -78,7 +76,34 @@ function openPage(){
 }
 
 // dark mode button
-// var icon= document.getElementById('icon');
-// icon.onclick=function(){
-//     document.body.classList.toggle("dark-theme");
-// }
+var icon= document.getElementById('icon');
+
+// local storage for setting the theme as default that is set by user
+ //if localStorage theme value is null it will check and add this theme
+if (localStorage.getItem('theme')==null) { 
+    localStorage.setItem('theme','light')
+}
+// local data
+let localData= localStorage.getItem('theme'); //local data value will be light by default
+
+if (localData=="light") {
+    icon.src="source/images/icons/moon-icon.png";
+    document.body.classList.remove("dark-theme"); //whenever localData value is light it will remove dark theme 
+}
+else if (localData=='dark') {
+    icon.src="source/images/icons/sun-icon.png";
+    document.body.classList.add("dark-theme"); 
+    
+}
+// value->light
+icon.onclick=function(){
+    document.body.classList.toggle('dark-theme');
+    if (document.body.classList.contains('dark-theme')) {
+        icon.src= "source/images/icons/sun-icon.png";
+        localStorage.setItem('theme','dark');
+    }
+    else{
+        icon.src="source/images/icons/moon-icon.png";
+        localStorage.setItem('theme','light');
+    }
+}
