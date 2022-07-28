@@ -82,6 +82,7 @@ icon.onclick=function(){
     if (document.body.classList.contains('dark-theme')) {
         icon.src= "source/images/icons/sun-icon.png";
         localStorage.setItem('theme','dark');
+}
     else{
         icon.src="source/images/icons/moon-icon.png";
         localStorage.setItem('theme','light');
