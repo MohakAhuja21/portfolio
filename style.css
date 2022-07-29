@@ -1,3 +1,11 @@
+*{
+    font-family: 'Noto Sans Mono', monospace;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    text-transform: capitalize;
+}
+
 /* dark mode/theme for website  */
 :root{
     --primary-color: white;
@@ -10,11 +18,10 @@
 .bg-active{
     background: red;
 }
-
 #icon{
     cursor: pointer;
 }
-/* experimental */
+/* switch for toggling dark mode ON/OFF */
 .switch{
     background-color:#0156b3;
     width: 80px;
@@ -36,14 +43,6 @@
 }
 .dark-theme .flicker{
     transform: translateX(40px);
-}
-
-*{
-    font-family: 'Noto Sans Mono', monospace;
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
-    text-transform: capitalize;
 }
 
 /* i don't want user to copy and paste from my website [disable text selection]*/
@@ -566,4 +565,22 @@ background: linear-gradient(90deg, rgba(6,48,59,1) 0%, rgba(0,240,112,1) 100%, r
         width: 0%;
     }
 }
-/*  */
+/* audio */
+.audio{
+    float: right;
+    display: flex;
+    align-items: center;
+}
+.audio p{
+    font-weight: bold;
+    font-size: smaller;
+}
+/* audio icon */
+#play-btn{
+    cursor: pointer;
+    width: 47px;
+    transition: all 0.2s ease-in-out;
+}
+#play-btn:active{
+    transform: rotate(20deg);
+}
