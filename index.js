@@ -34,10 +34,8 @@ container.onclick=function(){
 
 // script for animating download CV button
 let button = document.querySelector(".button");
-
 button.addEventListener("click",()=>{ 
     button.classList.add("active");
-
     setTimeout(()=>{
         button.classList.remove("active");
         document.querySelector("i").classList.replace('bx-cloud-download','bx-check-double');
@@ -45,6 +43,7 @@ button.addEventListener("click",()=>{
         // download will start automatically after animation will be done !
         let download_href="source/CV/blank pdf.pdf";
         window.location.href=download_href;
+        // alert
         alert("download completed in background. check notification !");
     },6000)//it will remove active button class after 6s.
 })
@@ -71,7 +70,9 @@ function openPage(){
         window.open('/skills.html')
     }
     else{
-        alert("cannot find. Try typing 'graduation' or 'email'")
+        // alert("cannot find. Try typing 'graduation' or 'email'")
+        var notyf = new Notyf();
+notyf.error("cannot find. Try typing 'graduation' or 'email'");
     }
 }
 
@@ -81,6 +82,8 @@ icon.onclick=function(){
     document.body.classList.toggle('dark-theme');
     if (document.body.classList.contains('dark-theme')) {
         localStorage.setItem('theme','dark');
+        var notyf = new Notyf();
+        notyf.success("we will remember your theme preference");
 }
     else{
         localStorage.setItem('theme','light');
