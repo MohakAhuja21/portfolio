@@ -115,6 +115,6 @@ play.onclick=function(){
     }
     else{
         myAudio.pause();
-        play.src="source/images/icons/pause-icon.png";
+        play.src="source/images/icons/play-icon.png";
     }
 }
