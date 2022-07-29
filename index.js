@@ -80,11 +80,11 @@ var icon= document.getElementById('icon');
 icon.onclick=function(){
     document.body.classList.toggle('dark-theme');
     if (document.body.classList.contains('dark-theme')) {
-        icon.src= "source/images/icons/sun-icon.png";
+        // icon.src= "source/images/icons/sun-icon.png";
         localStorage.setItem('theme','dark');
 }
     else{
-        icon.src="source/images/icons/moon-icon.png";
+        // icon.src="source/images/icons/moon-icon.png";
         localStorage.setItem('theme','light');
     }
 }
@@ -97,10 +97,10 @@ icon.onclick=function(){
 let localData= localStorage.getItem('theme'); //local data value will be light by default
 
 if (localData=="light") {
-    icon.src="source/images/icons/moon-icon.png";
+    // icon.src="source/images/icons/moon-icon.png";
     document.body.classList.remove("dark-theme"); //whenever localData value is light it will remove dark theme 
 }
 else if (localData=='dark') {
-    icon.src="source/images/icons/sun-icon.png";
+    // icon.src="source/images/icons/sun-icon.png";
     document.body.classList.add("dark-theme"); 
 }
