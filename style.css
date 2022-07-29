@@ -567,13 +567,13 @@ background: linear-gradient(90deg, rgba(6,48,59,1) 0%, rgba(0,240,112,1) 100%, r
 }
 /* audio */
 .audio{
-    float: right;
+    float: left;
     display: flex;
     align-items: center;
 }
 .audio p{
     font-weight: bold;
-    font-size: smaller;
+    font-size: small;
 }
 /* audio icon */
 #play-btn{
