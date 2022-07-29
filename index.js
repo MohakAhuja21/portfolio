@@ -76,7 +76,8 @@ notyf.error("cannot find. Try typing 'graduation' or 'email'");
     }
 }
 
-// dark mode button
+
+// dark mode/theme
 var icon= document.getElementById('icon');
 icon.onclick=function(){
     document.body.classList.toggle('dark-theme');
