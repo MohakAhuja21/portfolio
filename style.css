@@ -603,14 +603,18 @@ background: linear-gradient(90deg, rgba(6,48,59,1) 0%, rgba(0,240,112,1) 100%, r
     /* resize: vertical; */
     text-align: center;
     margin: 20px;
-    border: 2px solid black;
+    border: 2px solid transparent;
     border-radius: 5px;
-    width: 280px;
-    height: 360px;
+    width: 310px;
+    height: 500px;
 }
 .project-container h2{
+    color: var(--secondary-color);
     text-align: center;
     font-size: calc(2.9rem + (6 - 4.8) * (100vw - 32rem)/ (90 - 32));
+}
+.project-container {
+    background: var(--primary-color);
 }
 .project{
     justify-content: center;
@@ -619,8 +623,8 @@ background: linear-gradient(90deg, rgba(6,48,59,1) 0%, rgba(0,240,112,1) 100%, r
     display: flex;
 }
 .project-image{
-    width: 280px;
-    border-radius: 120px;
+    width: 300px;
+    border-radius: 5px;
 }
 .project-card h3{
     font-size: 28px;
@@ -628,7 +632,16 @@ background: linear-gradient(90deg, rgba(6,48,59,1) 0%, rgba(0,240,112,1) 100%, r
 .project-card i{
     font-size: 30px;
 }
+.project-gap{
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.project-card h3, p{
+    color: var(--secondary-color);
+    text-align: center;
+}
 hr{
+    margin-top: 15px;
     margin-inline: 14px;
 }
 .project-btn:hover{
