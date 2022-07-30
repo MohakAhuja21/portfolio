@@ -606,7 +606,7 @@ background: linear-gradient(90deg, rgba(6,48,59,1) 0%, rgba(0,240,112,1) 100%, r
     border: 2px solid transparent;
     border-radius: 5px;
     width: 310px;
-    height: 500px;
+    height: 510px;
 }
 .project-container h2{
     color: var(--secondary-color);
