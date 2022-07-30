@@ -614,7 +614,7 @@ background: linear-gradient(90deg, rgba(6,48,59,1) 0%, rgba(0,240,112,1) 100%, r
     height: 520px;
 }
 .project-container h2::first-letter{
-    font-size: calc(4.9rem + (6 - 4.8) * (100vw - 32rem)/ (90 - 32));
+    font-size: calc(5.2rem + (6 - 4.8) * (100vw - 32rem)/ (90 - 32));
     color: greenyellow;
 }
 .project-container h2{
