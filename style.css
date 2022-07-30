@@ -644,9 +644,6 @@ hr{
     margin-top: 15px;
     margin-inline: 14px;
 }
-.project-btn:hover{
-    /* background: rgb(155, 153, 153); */
-}
 .project-card a{
     text-decoration: none;  
 }
@@ -673,6 +670,10 @@ hr{
     width: 60%;
 }
 .project-live-btn a{
+    color: white;
     font-size: 15px;
     text-decoration: none;
+}
+.project-btn img{
+    width: 33px;
 }
