@@ -41,7 +41,16 @@
     transition: 0.2s;
     box-shadow: 2px 2px 6px black;
 }
+.moon{
+    font-size: 15px;
+    position: absolute;
+    margin-inline: 2px;
+    top: 4px;
+    right: 4px;
+}
 .dark-theme .flicker{
+    box-shadow: inset -1px -1px 3px white ;
+    background: rgb(51, 51, 51);
     transform: translateX(40px);
 }
 
@@ -437,19 +446,18 @@ transform: translateY(60px);
 }
 /* tech known logo */
 .logo{
-    cursor: no-drop;
     background-color: var(--primary-color);
 }
 .logoGrid{
     align-items: center;
     justify-content: center;
     display: flex;
-    grid-template-columns: repeat(auto-fill,minmax(150px,1fr));
+    /* grid-template-columns: repeat(auto-fill,minmax(150px,1fr)); */
     grid-gap: 2rem;
     width: 100%;
 }
 .logoGrid_item{
-    display: grid;
+    /* display: grid; */
     list-style-type: none;
 }
 .logoGrid_item img{
@@ -588,3 +596,5 @@ background: linear-gradient(90deg, rgba(6,48,59,1) 0%, rgba(0,240,112,1) 100%, r
 #play-btn:active{
     transform: rotate(20deg);
 }
+
+/* project section */

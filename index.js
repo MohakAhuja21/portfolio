@@ -82,6 +82,7 @@ icon.onclick=function(){
     document.body.classList.toggle('dark-theme');
     if (document.body.classList.contains('dark-theme')) {
         localStorage.setItem('theme','dark');
+        // notification when user clicks on flicker to enable dark theme by notyf.js
         var notyf = new Notyf();
         notyf.success("we will remember your theme preference");
 }
@@ -104,6 +105,8 @@ else if (localData=='dark') {
     document.body.classList.add("dark-theme"); 
 }
 
+
+
 // script to play audio recording
 var myAudio= document.getElementById('myAudio');
 var play= document.getElementById('play-btn');
@@ -118,3 +121,6 @@ play.onclick=function(){
         play.src="source/images/icons/play-icon.png";
     }
 }
+
+
+
