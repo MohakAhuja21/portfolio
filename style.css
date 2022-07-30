@@ -602,13 +602,13 @@ background: linear-gradient(90deg, rgba(6,48,59,1) 0%, rgba(0,240,112,1) 100%, r
     transform: rotate(20deg);
 }
 
+
 /* project section */
 .project-card{
     overflow: hidden;
     /* resize: vertical; */
     text-align: center;
     margin: 20px;
-    border: 2px solid transparent;
     border-radius: 5px;
     width: 310px;
     height: 520px;
@@ -692,5 +692,6 @@ hr{
 .project-btn img{
     width: 33px;
 }
+
 
 /* password page/section */
