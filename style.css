@@ -606,7 +606,7 @@ background: linear-gradient(90deg, rgba(6,48,59,1) 0%, rgba(0,240,112,1) 100%, r
     border: 2px solid transparent;
     border-radius: 5px;
     width: 310px;
-    height: 510px;
+    height: 520px;
 }
 .project-container h2{
     color: var(--secondary-color);
@@ -630,7 +630,7 @@ background: linear-gradient(90deg, rgba(6,48,59,1) 0%, rgba(0,240,112,1) 100%, r
     font-size: 28px;
 }
 .project-card i{
-    font-size: 30px;
+    font-size: 36px;
 }
 .project-gap{
     margin-top: 10px;
@@ -647,7 +647,12 @@ hr{
 .project-btn:hover{
     /* background: rgb(155, 153, 153); */
 }
+.project-card a{
+    text-decoration: none;  
+}
 .project-btn{
+    border: none;
+    cursor: pointer;
     margin: auto;
     margin-top: 18px;
     border-radius: 5px;
@@ -656,12 +661,6 @@ hr{
     align-items: center;
     justify-content: center;
     background: black;
-    width: 90%;
-}
-.project-btn a{
-    color: white;
-    text-decoration: none;
+    width: 60%;
     padding: 10px;
-    margin-left: 10px;
-    font-size: 16px;
 }
