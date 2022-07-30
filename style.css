@@ -656,6 +656,9 @@ hr{
     margin-top: 15px;
     margin-inline: 14px;
 }
+.hr-2{
+    margin-inline: 90px;
+}
 .project-card a{
     text-decoration: none;  
 }
