@@ -1,0 +1,29 @@
+*{
+    /* margin: 0; */
+    padding: 0;
+}
+#nav-menu{
+    padding: 10px;
+    padding-right: 20px;
+    background-color: rgb(58, 58, 58);
+    color: white;
+    border-radius: 5px;
+    letter-spacing: 1px;
+
+    /* to remove the arrow and replace it with a custom one */
+    appearance: none;
+    background-image: url(source/passFolder/drop\ icon.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: center;
+    background-size: 16px;
+    font-size: 15px;
+}
+#nav-menu option{
+    font-size: 14px;
+    background: rgba(98, 97, 97, 0.674);
+    border-radius: 5px;
+}
+br{
+    margin-top: 10px;
+}
