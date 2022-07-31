@@ -313,7 +313,6 @@ label{
 }
 /* animations -> h1 */
 .hero-text h1{
-    /* color: rgba(255, 253, 253, 0.709); */
     color: var(--secondary-color);
     font-size: calc(4.9rem + (6 - 4.8) * (100vw - 32rem)/ (90 - 32));
     margin: 0 auto;
