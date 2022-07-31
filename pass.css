@@ -65,3 +65,8 @@ br{
 .dropdown:hover .dropdown-content{
     display: block;
 }
+
+.a-none{
+    color: rgb(196, 195, 195) !important;
+    cursor: no-drop;
+}
