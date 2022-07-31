@@ -4,19 +4,13 @@
 }
 #nav-menu{
     padding: 10px;
-    padding-right: 20px;
     background-color: rgb(58, 58, 58);
     color: white;
     border-radius: 5px;
     letter-spacing: 1px;
 
     /* to remove the arrow and replace it with a custom one */
-    appearance: none;
-    background-image: url(source/passFolder/drop\ icon.png);
-    background-repeat: no-repeat;
-    background-position-x: right;
-    background-position-y: center;
-    background-size: 16px;
+    /* appearance: none; */
     font-size: 15px;
 }
 #nav-menu option{
@@ -26,4 +20,42 @@
 }
 br{
     margin-top: 10px;
+}
+
+/* start here */
+.dropdown{
+    width: fit-content;
+    box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.342);
+    border-radius: 6px;
+}
+.dropdown button{
+    width: fit-content;
+    background: gainsboro;
+    border: none;
+    padding: 14px;
+    letter-spacing: 1px;
+}
+.dropdown-content a{
+    text-align: left;
+    float: none;
+    text-decoration: none;
+    color: black;
+    display: block;
+    width: fit-content;
+}
+.dropdown-content a:hover{
+    color: blue;
+}
+.dropdown-content{
+    z-index: 1;
+    display: none;
+    margin-top: 3px;
+    position: absolute;
+    padding: 14px;
+    border-radius: 5px;
+    background: whitesmoke;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
 }
