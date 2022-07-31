@@ -1,28 +1,9 @@
 *{
-    /* margin: 0; */
+    margin: 0;
     padding: 0;
 }
-#nav-menu{
-    padding: 10px;
-    background-color: rgb(58, 58, 58);
-    color: white;
-    border-radius: 5px;
-    letter-spacing: 1px;
 
-    /* to remove the arrow and replace it with a custom one */
-    /* appearance: none; */
-    font-size: 15px;
-}
-#nav-menu option{
-    font-size: 14px;
-    background: rgba(98, 97, 97, 0.674);
-    border-radius: 5px;
-}
-br{
-    margin-top: 10px;
-}
-
-/* start here */
+/* styling dropdown menu*/
 .dropdown{
     width: fit-content;
     box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.342);
