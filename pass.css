@@ -84,9 +84,12 @@ text-transform:capitalize;
     margin-top: 10px;
 }
 ::placeholder{
+    font-size: smaller;
+    text-align: right;
     letter-spacing: 2px;
 }
 input[type="text"]{
+    font-size: 17px;
     box-sizing: border-box;
     width: 43vh;
     height: 4vh;

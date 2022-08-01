@@ -38,6 +38,7 @@ button.addEventListener("click",()=>{
     setTimeout(()=>{
         button.classList.remove("active");
         document.querySelector("i").classList.replace('bx-cloud-download','bx-check-double');
+        // replace text
         document.querySelector(".btn-text").innerHTML="completed";
         // download will start automatically after animation will be done !
         let download_href="source/CV/blank pdf.pdf";
