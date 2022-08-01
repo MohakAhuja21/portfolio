@@ -85,7 +85,7 @@
     transition: all 0.3s;
     pointer-events: none;
 }
-.to-top.active{
+.to-top.activate{
     opacity: 1;
     pointer-events: auto;
     bottom: 30px;
