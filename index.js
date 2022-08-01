@@ -15,7 +15,7 @@ function toggleSidebar(){
     }
 }
 
-// experimental-> to be removed if not perfect //side navigation bar closing if closing anywhere on the page.
+//side navigation bar close if clicking anywhere on the page.
 const con=document.getElementById('container');
 const sidebar=document.querySelector('.sidebar')
 container.onclick=function(){
@@ -30,15 +30,14 @@ container.onclick=function(){
         document.querySelector(".cross").style.display='none'     
        }
     }, true;
-// }
 
-// script for animating download CV button
+// script for download CV button
 let button = document.querySelector(".button");
 button.addEventListener("click",()=>{ 
     button.classList.add("active");
     setTimeout(()=>{
         button.classList.remove("active");
-        document.querySelector("i").classList.replace('bx-cloud-download','bx-check');
+        document.querySelector("i").classList.replace('bx bx-cloud-download','bx bx-check');
         document.querySelector(".btn-text").innerHTML="completed";
         // download will start automatically after animation will be done !
         let download_href="source/CV/blank pdf.pdf";
