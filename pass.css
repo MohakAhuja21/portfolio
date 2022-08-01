@@ -3,6 +3,7 @@
     padding: 0;
     font-family: 'Noto Sans Mono', monospace;
 font-family: 'Share Tech Mono', monospace;
+text-transform:capitalize;
 }
 
 /* styling dropdown menu*/
@@ -82,13 +83,23 @@ font-family: 'Share Tech Mono', monospace;
 .gen_pass{
     margin-top: 10px;
 }
+::placeholder{
+    letter-spacing: 2px;
+}
 input[type="text"]{
+    box-sizing: border-box;
     width: 43vh;
     height: 4vh;
     border: none;
-    outline: 0.6px dashed rgb(182, 182, 206);
+    backdrop-filter: blur(20px);
+    box-shadow: inset -3px -1px 3px gray;
+    background: transparent;
     border-radius: 5px;
     appearance: none;
+    caret-color: rgb(100, 100, 240);
+}
+input[type="text"]:focus{
+    outline: none;
 }
 .btn{
     padding: 12px;
@@ -96,10 +107,16 @@ input[type="text"]{
     color: white;
     border-radius: 5px;
     border: none;
-    box-shadow:  2px 2px 4px rgb(139, 139, 139);
     cursor: pointer;
+/* glass-morphism */
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 12.5px );
+    -webkit-backdrop-filter: blur( 12.5px );
 }
-@media screen and (max-width: 696px) {
+.btn:active{
+    transform: scale(0.9);    
+}
+@media screen and (max-width: 1350px) {
     .btn-copy{
         position: absolute; 
         right: 0%;
