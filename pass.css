@@ -55,3 +55,15 @@
     margin-top: 3px;
     margin-bottom: 3px;
 }
+
+/* input box styling starts here */
+.inputBox{
+    margin-top: 100px;
+}
+.tooltip{
+    /* position: relative; */
+    display: inline-block;
+}
+.tooltiptext{
+    visibility: hidden;
+}
