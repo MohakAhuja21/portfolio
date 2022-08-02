@@ -56,19 +56,25 @@
         <div class="contact-section">
             <h1>contact me</h1>
             <div class="border"></div>
-            <form action="" class="contact-form">
+            <form action="" class="contact-form" onsubmit="return myFunc()">
+             <!-- name validation -->
             <label class="label-text">full name
-                <input type="text" name="Fname" id="Fname" class="contact-form-text" required>
+                <input type="text" id="Fname" class="contact-form-text" onkeyup="validateName()">
+            <span style="color: white;" id="name-error"></span>
             </label>
+            <!-- validation ends here -->
             <label class="label-text">email
-                <input type="email" name="email" id="email" class="contact-form-text" required>
+                <input type="email" name="email" id="email" class="contact-form-text">
             </label>
             <label class="label-text">phone number
                 <input type="tel" name="phone" id="phone" class="contact-form-text">
             </label>
+            <!-- text area validation -->
             <label class="label-text">your message
-                <textarea name="message" id="message" cols="30" rows="3" class="contact-form-text"></textarea>
+                <textarea name="message" id="textMessage" cols="30" rows="3" class="contact-form-text" value=""></textarea>
+             <span style="color: white;" id="message"></span> 
              </label>
+             <!-- validation ends here -->
                 <button class="btn"><i class="bx bx-mail-send"></i></button>
             </form>
         </div>

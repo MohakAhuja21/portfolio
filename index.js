@@ -105,8 +105,6 @@ else if (localData=='dark') {
     document.body.classList.add("dark-theme"); 
 }
 
-
-
 // script to play audio recording
 var myAudio= document.getElementById('myAudio');
 var play= document.getElementById('play-btn');
@@ -122,5 +120,45 @@ play.onclick=function(){
     }
 }
 
+// contact form validation starts here....
+//  textarea/message validation
+function myFunc(){
+    var a= document.getElementById('textMessage').value;
 
+    // if message is empty
+    if (a=="") {
+        document.getElementById('message').innerHTML="any message u want to give ?";
+        return false;
+    }
+    // if message is less than 1 digits
+    if (a.length<2) {
+        document.getElementById('message').innerHTML="please type more than 1 character"
+        document.getElementById('message').style.color="red";
+        return false;
+    }
+    // if message length is more than 30 characters show an error.
+    if (a.length>30) {
+        document.getElementById('message').innerHTML="oops! not more than 30 characters";
+        document.getElementById('message').style.color="red";
+        return false;
+    }
+}
+// name validation
+function validateName(){
+    var name= document.getElementById('Fname').value;
+
+    // if name is not written give a error.
+    if (name.length==0) {
+        document.getElementById('name-error').innerHTML="Name is required";
+        return false;
+    }
+    // expression->1st character should be alphabet after that there will be a space and then another alphabet character. If value does not match the expression then give an error message and return
+    if (!name.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/)){
+        document.getElementById('name-error').innerHTML="please type your full name";
+        return false;
+    }
+    // if all conditions are true. user may proceed.
+    document.getElementById('name-error').innerHTML="<i class='bx bx-user-check'></i>";
+    return true;
+}
 

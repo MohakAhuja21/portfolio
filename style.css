@@ -232,7 +232,7 @@ input[type="text1"]:invalid{
     font-size: 21px;
 }
 .contact-section{
-    background-color: rgb(2,20,24);;
+    background-color: rgb(2,20,24);
     height: 100vh;
     background-size: cover;
     padding: 50px 0;
@@ -283,11 +283,23 @@ textarea{
     border-radius: 5px;
     resize: none;
 }
+/* form validation id */
+#message{
+    font-size: small;
+}
+#name-error{
+    font-size: small;
+}
+#name-error i{
+    color: greenyellow;
+    font-size: 20px;
+}
+
 label,input{
     display: block;
 }
 label{
-    margin-bottom:20px;
+    margin-bottom:24px;
 }
 
 /* HERO SECTION -> HOME */
