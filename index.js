@@ -200,15 +200,6 @@ function validateEmail(){
     return true;
 }
 
-function myFunc() {
-    var email =document.getElementById('email').value;
-
-    if (email=="") {
-        document.getElementById('email-error').innerHTML="required";
-        return false;
-    }
-}
-
 
 
 
