@@ -286,13 +286,33 @@ textarea{
 /* form validation id */
 #message{
     font-size: small;
+    letter-spacing: 1px;
+}
+#phone-error{
+    font-size: small;
+    color: red;
+    letter-spacing: 1px;
+}
+#phone-error i{
+    color: greenyellow;
+    font-size: 21px;
 }
 #name-error{
     font-size: small;
+    letter-spacing: 1px;
 }
 #name-error i{
     color: greenyellow;
-    font-size: 20px;
+    font-size: 21px;
+}
+#email-error{
+    color:red;
+    font-size: small;
+    letter-spacing: 1px;
+}
+#email-error i{
+    color: greenyellow;
+    font-size: 21px;
 }
 
 label,input{

@@ -121,6 +121,7 @@ play.onclick=function(){
 }
 
 // contact form validation starts here....
+
 //  textarea/message validation
 function myFunc(){
     var a= document.getElementById('textMessage').value;
@@ -128,12 +129,13 @@ function myFunc(){
     // if message is empty
     if (a=="") {
         document.getElementById('message').innerHTML="any message u want to give ?";
+        document.getElementById('message').style.color='white';
         return false;
     }
     // if message is less than 1 digits
     if (a.length<2) {
-        document.getElementById('message').innerHTML="please type more than 1 character"
         document.getElementById('message').style.color="red";
+        document.getElementById('message').innerHTML="please type more than 1 character";
         return false;
     }
     // if message length is more than 30 characters show an error.
@@ -154,11 +156,59 @@ function validateName(){
     }
     // expression->1st character should be alphabet after that there will be a space and then another alphabet character. If value does not match the expression then give an error message and return
     if (!name.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/)){
-        document.getElementById('name-error').innerHTML="please type your full name";
+        document.getElementById('name-error').innerHTML="please type your full name"
         return false;
     }
     // if all conditions are true. user may proceed.
     document.getElementById('name-error').innerHTML="<i class='bx bx-user-check'></i>";
     return true;
 }
+//phone validation
+function validatePhone(){
+    var phone= document.getElementById('phone').value;
+
+    if (phone.length==0) {
+        document.getElementById('phone-error').innerHTML='phone number required';
+        return false;
+    }
+    if (phone.length!==10) {
+        document.getElementById('phone-error').innerHTML="phone number should be of 10 digits. Please check !";
+        return false;    
+    }
+    if (!phone.match(/^[0-9]{10}$/)) {
+        document.getElementById('phone-error').innerHTML="please type numbers!";
+        return false;
+    }
+    document.getElementById('phone-error').innerHTML="<i class='bx bx-user-check'></i>";
+    return true;
+}
+// email validation
+function validateEmail(){
+    var email= document.getElementById('email').value;
+
+    if (email=="") {
+        document.getElementById('email-error').innerHTML="email address is required";
+    document.getElementById("email").removeAttribute("required");
+
+        return false;
+    }
+    if (!email.match(/^[A-Za-z\._\-[0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
+        document.getElementById('email-error').innerHTML="email invalid";
+    return false;
+    }
+    document.getElementById('email-error').innerHTML="<i class='bx bx-user-check'></i>";
+    return true;
+}
+
+function myFunc() {
+    var email =document.getElementById('email').value;
+
+    if (email=="") {
+        document.getElementById('email-error').innerHTML="required";
+        return false;
+    }
+}
+
+
+
 
