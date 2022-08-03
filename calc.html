@@ -22,6 +22,39 @@
   </div>
  
   <!--calculator section starts here  -->
+<div class="container">
+    <div class="calculator">
+        <input type="text" id="output" placeholder="0">
+
+        <!-- function 1> clear -->
+        <button onclick="clear()">cl</button>
+        <!-- function 2> delete -->
+        <button onclick="del()">del</button>
+
+        <!-- calculator button starts here -->
+        <button onclick="display('%')">%</button>
+        <button onclick="display('/')">/</button>
+        <button onclick="display('7')">7</button>
+        <button onclick="display('8')">8</button>
+        <button onclick="display('9')">9</button>
+        <button onclick="display('*')">*</button>
+        <button onclick="display('4')">4</button>
+        <button onclick="display('5')">5</button>
+        <button onclick="display('6')">6</button>
+        <button onclick="display('-')">-</button>
+        <button onclick="display('1')">1</button>
+        <button onclick="display('2')">2</button>
+        <button onclick="display('3')">3</button>
+        <button onclick="display('+')">+</button>
+        <button onclick="display('.')">.</button>
+        <button onclick="display('0')">0</button>
+        <!-- calculator button ends here -->
+
+        <!-- function 3> calculate -->
+        <button class="equal" onclick="calculate()">=</button>
+    </div>
+</div>
 
 </body>
+<script src="calc.js"></script>
 </html>
