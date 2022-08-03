@@ -16,7 +16,7 @@ function calculate(){
 // function for clear button
 function clear(){
     // when i click on clear button/cl everything must be empty!
-    op.value="";
+        
 }
 function del(){
     // when we click on delete button it will delete numbers one by one.
