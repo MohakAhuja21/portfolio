@@ -172,7 +172,7 @@ function validatePhone(){
         return false;
     }
     if (phone.length!==10) {
-        document.getElementById('phone-error').innerHTML="phone number should be of 10 digits. Please check !";
+        document.getElementById('phone-error').innerHTML="phone number should be of 10 digits.";
         return false;    
     }
     if (!phone.match(/^[0-9]{10}$/)) {
