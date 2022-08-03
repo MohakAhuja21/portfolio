@@ -200,6 +200,13 @@ function validateEmail(){
     return true;
 }
 
+// preloader
+var loader=document.getElementById('preloader');
+window.addEventListener('load',vanish);
+
+function vanish(){
+    loader.classList.add('disappear');
+}
 
 
 
