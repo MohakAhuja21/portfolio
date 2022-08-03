@@ -725,7 +725,7 @@ hr{
 }
 /* preloader */
 #preloader{
-    background: rgba(0, 0, 0, 0.91) url(source/images/preloader/loader\ img.gif) no-repeat center;
+    background: rgba(0, 0, 0, 0.985) url(source/images/preloader/loader\ img.gif) no-repeat center;
     background-size: 17%;
     height: 100vh;
     width: 100%;
