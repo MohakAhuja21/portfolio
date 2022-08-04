@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>portfolio</title>
+    <!-- wave surfer.js -->
+    <script src="https://unpkg.com/wavesurfer.js"></script>
     <!-- notyf -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css">
     <!-- box icons cdn link -->
@@ -24,7 +26,7 @@
   </head>
   <body>
  <!--preloader  -->
- <div id="preloader"></div>
+ <!-- <div id="preloader"></div> -->
       <!-- navigation sidebar-->
       <div class="sidebar sidebarGo">
         <nav>
@@ -132,14 +134,18 @@
         I add animations to the website to make it more interactive and enjoyable.
         I value skills over degrees.</p>
         <br>
-        <!-- audio -->
-        <div class="audio">
-          <p class="prevent-select">click here to listen:</p>
-          <img src="source/images/icons/play-icon.png" alt="play-audio" id="play-btn">
-        <audio id="myAudio">
-          <source src="source/recording/Developer voice .mp3" type="audio/mp3">
-        </audio>
-      </div>
+        <!-- audio/developer voice section -->     
+        <div class="music-con">
+          <div class="music">
+            <p>artist: mohak</p>
+            <h1>an introduction</h1>
+            <div class="track">
+              <img id="playBtn" src="source/images/icons/play-icon.png">
+              <div id="waveform"></div>
+            </div>
+          </div>
+        </div>
+
     </div>
   </div>
 </section>
@@ -240,6 +246,36 @@
   loop: false,
   fadeOut: true
 });
+
+// script tag for wave surfer.js -->
+var playBtn=document.getElementById('playBtn');
+
+var wavesurfer = WaveSurfer.create({
+    container: '#waveform',
+    waveColor: 'gray',
+    progressColor: 'greenyellow',
+    responsive:true,
+    barWidth:3,
+    height:70,
+    barRadius:3
+});
+
+wavesurfer.load('source/recording/Developer voice .mp3');
+
+playBtn.onclick= function(){
+  wavesurfer.playPause();
+  if (playBtn.src.includes('play-icon.png')) {
+    playBtn.src="source/images/icons/pause-icon.png";
+  }
+  else{
+    playBtn.src="source/images/icons/play-icon.png";
+  }
+}
+wavesurfer.on('finish',function(){
+  playBtn.src="source/images/icons/play-icon.png";
+  wavesurfer.stop();
+})
+
   </script>
   <script src="index.js"></script>
 </html>

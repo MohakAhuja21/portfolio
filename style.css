@@ -609,30 +609,6 @@ background: linear-gradient(90deg, rgba(6,48,59,1) 0%, rgba(0,240,112,1) 100%, r
         width: 0%;
     }
 }
-/* audio */
-.audio{
-    float: left;
-    display: flex;
-    align-items: center;
-    border: 1px solid white;
-    padding: 10px;
-    box-shadow: inset -4px -2px 10px rgba(255, 255, 255, 0.578);
-    border-radius:5px;
-}
-.audio p{
-    font-weight: bold;
-    font-size: small;
-}
-/* audio icon */
-#play-btn{
-    cursor: pointer;
-    width: 47px;
-    transition: all 0.2s ease-in-out;
-}
-#play-btn:active{
-    transform: rotate(20deg);
-}
-
 
 /* project section */
 .project-card{
@@ -746,4 +722,41 @@ hr{
     #preloader{
         background-size: 200px;
     }
+}
+/* audio recording section styling*/
+.music-con{
+    border-radius: 8px;
+    width: 100%;
+    background: var(--primary-color);
+}
+.music h1{
+    margin-top: 6px;
+    color: var(--secondary-color);
+}
+.music p{
+    color: rgb(124, 124, 124);
+    /* color: var(--primary-color); */
+}
+.music{
+    box-shadow: 2px 5px 10px rgba(0,0,0,0.55), 
+    inset -1.4px -1px 7px rgba(255, 255, 255, 0.772);
+    background: var(--primary-color);
+    width: 90%;
+    max-width: 500px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(red,0,0,0.4);
+    border-radius: 8px;
+}
+.track{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.track img{
+    width: 60px;
+    cursor: pointer;
+}
+.track div{
+    /* it will use entire space available in the row. */
+    flex: 1;
 }

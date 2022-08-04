@@ -105,23 +105,7 @@ else if (localData=='dark') {
     document.body.classList.add("dark-theme"); 
 }
 
-// script to play audio recording
-var myAudio= document.getElementById('myAudio');
-var play= document.getElementById('play-btn');
-
-play.onclick=function(){
-    if (myAudio.paused) {
-        myAudio.play();
-        play.src="source/images/icons/pause-icon.png";
-    }
-    else{
-        myAudio.pause();
-        play.src="source/images/icons/play-icon.png";
-    }
-}
-
 // contact form validation starts here....
-
 //  textarea/message validation
 function myFunc(){
     var a= document.getElementById('textMessage').value;
@@ -207,6 +191,9 @@ window.addEventListener('load',vanish);
 function vanish(){
     loader.classList.add('disappear');
 }
+
+// wave surfer.js
+
 
 
 
