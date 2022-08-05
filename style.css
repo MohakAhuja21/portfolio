@@ -606,7 +606,6 @@ background: linear-gradient(90deg, rgba(6,48,59,1) 0%, rgba(0,240,112,1) 100%, r
 /* project section */
 .project-card{
     overflow: hidden;
-    /* resize: vertical; */
     text-align: center;
     margin: 20px;
     border-radius: 5px;
@@ -689,8 +688,13 @@ hr{
     font-size: 15px;
     text-decoration: none;
 }
-.project-btn img{
-    width: 33px;
+/* codePen icon */
+.btn-x{
+    background-image: url(source/images/icons/codepen\ icon.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
 }
 /* preloader */
 #preloader{
