@@ -77,6 +77,8 @@
     opacity: 0;
     transition: all 0.3s;
     pointer-events: none;
+    /* z index added as it was overlapping with other elements */
+    z-index: 6;
 }
 .to-top.active{
     opacity: 1;
@@ -90,7 +92,7 @@
     background-color: black;
     height: 100vh;
     /* added z-index because otherwise other things will overlap on sidebar */
-    z-index: 1;
+    z-index: 5;
     position: fixed;
 }
 .sidebar ul{
@@ -118,7 +120,7 @@
 }
 /* hamburger menu-> part of side navigation bar only ! */
 .hamburger{
-    z-index: 2;
+    z-index: 6;
     position: fixed;
     left: 3px;
     top: 3px;
