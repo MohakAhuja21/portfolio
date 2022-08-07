@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Abel', sans-serif;
+}
+body{
+    background-color: rgb(134, 134, 246);
+}
+.wrapper{
+    margin: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,260px);
+    gap: 20px;
+}
+.wrapper li{
+    background-color: whitesmoke;
+    list-style-type: none;
+    height: 200px;
+    border-radius: 7px;
+    padding: 15px;
+}
+.add-box, .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.add-box .icon{
+    cursor:pointer;
+    font-size: 40px;
+    color: rgb(134, 134, 246);
+    border: 2px dotted rgb(134, 134, 246);
+    padding: 6px;
+    border-radius:50%;
+}
+.add-box p{
+    color: rgb(134, 134, 246);
+    font-size: large;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.details p{
+    font-size: large;
+    font-weight: bold;
+}
+.details span{
+    margin-top: 17px;
+    display: block;
+    font-size: 20px;
+}
+.bottom-content{
+    padding-top: 10px;
+    border-top: 1px solid rgb(171, 169, 169);
+    margin-inline: 5px;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.settings{
+    cursor: pointer;
+    position: relative;
+}
+/* to bring down date and settings icon at the end of card */
+.note{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.menu li{
+    height: 15px;
+    border-radius: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.menu li:hover{
+    background: rgb(226, 225, 225);
+}
+.menu{
+    position: absolute;
+    border-radius: 5px;
+    padding: 5px 0;
+    /* by using bottom 0 it will sit in place in the specific card */
+    bottom: 0;
+    /* bring menu to left */
+    right: -5px;
+    box-shadow: 0 0 6px rgba(0,0,0,0.15);
+    /* to hide the menu */
+    transform: scale(0);
+    /* menu will popup from bottom-right! */
+    transform-origin:bottom right;
+    transition: transform 0.2s ease-in-out;
+}
+/* whenever someone hovers over to settings icon menu will popup */
+.settings:hover .menu{
+    transform: scale(1);
+}
+.menu li i{
+    padding-right: 10px;
+}

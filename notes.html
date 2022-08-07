@@ -1,14 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>project/3</title>
-    <link rel="stylesheet" href="notes.css">
-</head>
-<body>
-    
-</body>
-<script src="notes.js"></script>
+    <link rel="stylesheet" href="notes.css" />
+    <!-- box icons cdn -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abel&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+
+    <!-- popup box -->
+    <!-- <div class="popup-box">
+        <div class="popup">
+            <div class="content">
+                <header>
+                    <p>add a new note</p>
+
+                </header>
+            </div>
+        </div>
+    </div> -->
+
+
+<!-- wrapper covering whole notes app -->
+<div class="wrapper">
+
+      <li class="add-box">
+        <!-- plus icon to add new notes -->
+        <div class="icon"><i class="bx bx-plus"></i></div>
+        <p>add new note</p>
+      </li>
+
+      <!-- note 1 -->
+      <li class="note">
+        <div class="details">
+          <p>this is a title</p>
+          <span
+            >Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Laudantium, neque!</span
+          >
+        </div>
+        <div class="bottom-content">
+          <span>april 2 2000</span>
+          <!-- setting icon to edit/delete a particular note -->
+          <div class="settings">
+            <i class="bx bx-dots-horizontal-rounded"></i>
+            <!-- edit and delete icons under ol tag -->
+            <ol class="menu">
+                <li><i class='bx bx-edit-alt' ></i>edit</li>
+                <li><i class='bx bx-trash' ></i>delete</li>
+            </ol>
+          </div>
+        </div>
+      </li>
+
+      <!-- note 2 -->
+      <li class="note">
+        <div class="details">
+          <p>this is a title</p>
+          <span
+            >Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Laudantium, neque!</span
+          >
+        </div>
+        <div class="bottom-content">
+          <span>april 2 2000</span>
+          <div class="settings">
+            <i class="bx bx-dots-horizontal-rounded"></i>
+          </div>
+        </div>
+      </li>
+
+      <!-- note 3 -->
+      <li class="note">
+        <div class="details">
+          <p>this is a title</p>
+          <span
+            >Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Laudantium, neque!</span
+          >
+        </div>
+        <div class="bottom-content">
+          <span>april 2 2000</span>
+          <div class="settings">
+            <i class="bx bx-dots-horizontal-rounded"></i>
+          </div>
+        </div>
+      </li>
+
+      <!-- note 4 -->
+      <li class="note">
+        <div class="details">
+          <p>this is a title</p>
+          <span
+            >Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Laudantium, neque!</span
+          >
+        </div>
+        <div class="bottom-content">
+          <span>april 2 2000</span>
+          <div class="settings">
+            <i class="bx bx-dots-horizontal-rounded"></i>
+          </div>
+        </div>
+      </li>
+
+      <!-- note 5 -->
+      <li class="note">
+        <div class="details">
+          <p>this is a title</p>
+          <span
+            >Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Laudantium, neque!</span
+          >
+        </div>
+        <div class="bottom-content">
+          <span>april 2 2000</span>
+          <div class="settings">
+            <i class="bx bx-dots-horizontal-rounded"></i>
+          </div>
+        </div>
+      </li>
+
+<!-- wrapper div ends here -->
+</div>
+
+  </body>
+  <script src="notes.js"></script>
 </html>
