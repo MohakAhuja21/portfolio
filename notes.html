@@ -21,18 +21,47 @@
   </head>
   <body>
 
+<!-- note info for user -->
+<h3 class="caution">
+  <i class='bx bxs-bell' undefined ></i>
+   Note: We don't store any of your information. If you delete your browser history. Notes over here will get deleted too !</h3>    
+
     <!-- popup box -->
-    <!-- <div class="popup-box">
-        <div class="popup">
-            <div class="content">
-                <header>
-                    <p>add a new note</p>
+    <div class="popup-box">
 
-                </header>
+      <div class="popup">
+
+        <div class="content">
+
+          <!-- closing icon -->
+          <header>
+            <p>add new note</p>
+            <i class='bx bx-window-close'></i>
+          </header>
+
+          <form action="#">
+            <div class="row-title">
+              <label>title</label>
+
+              <input type="text" id="titleTag" spellcheck="false">
+
             </div>
-        </div>
-    </div> -->
+            <div class="row-description">
+              <label>description</label>
 
+              <textarea id="descTag" spellcheck="false"></textarea>
+
+            </div>
+
+            <button class="note-btn">add note</button>
+
+          </form>
+
+        </div>
+
+      </div>
+
+    </div>
 
 <!-- wrapper covering whole notes app -->
 <div class="wrapper">
@@ -44,7 +73,8 @@
       </li>
 
       <!-- note 1 -->
-      <li class="note">
+
+      <!-- <li class="note">
         <div class="details">
           <p>this is a title</p>
           <span
@@ -54,88 +84,17 @@
         </div>
         <div class="bottom-content">
           <span>april 2 2000</span>
-          <!-- setting icon to edit/delete a particular note -->
           <div class="settings">
             <i class="bx bx-dots-horizontal-rounded"></i>
-            <!-- edit and delete icons under ol tag -->
             <ol class="menu">
                 <li><i class='bx bx-edit-alt' ></i>edit</li>
                 <li><i class='bx bx-trash' ></i>delete</li>
             </ol>
           </div>
         </div>
-      </li>
-
-      <!-- note 2 -->
-      <li class="note">
-        <div class="details">
-          <p>this is a title</p>
-          <span
-            >Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Laudantium, neque!</span
-          >
-        </div>
-        <div class="bottom-content">
-          <span>april 2 2000</span>
-          <div class="settings">
-            <i class="bx bx-dots-horizontal-rounded"></i>
-          </div>
-        </div>
-      </li>
-
-      <!-- note 3 -->
-      <li class="note">
-        <div class="details">
-          <p>this is a title</p>
-          <span
-            >Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Laudantium, neque!</span
-          >
-        </div>
-        <div class="bottom-content">
-          <span>april 2 2000</span>
-          <div class="settings">
-            <i class="bx bx-dots-horizontal-rounded"></i>
-          </div>
-        </div>
-      </li>
-
-      <!-- note 4 -->
-      <li class="note">
-        <div class="details">
-          <p>this is a title</p>
-          <span
-            >Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Laudantium, neque!</span
-          >
-        </div>
-        <div class="bottom-content">
-          <span>april 2 2000</span>
-          <div class="settings">
-            <i class="bx bx-dots-horizontal-rounded"></i>
-          </div>
-        </div>
-      </li>
-
-      <!-- note 5 -->
-      <li class="note">
-        <div class="details">
-          <p>this is a title</p>
-          <span
-            >Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Laudantium, neque!</span
-          >
-        </div>
-        <div class="bottom-content">
-          <span>april 2 2000</span>
-          <div class="settings">
-            <i class="bx bx-dots-horizontal-rounded"></i>
-          </div>
-        </div>
-      </li>
-
-<!-- wrapper div ends here -->
+      </li> -->
 </div>
+<!-- wrapper div ends here -->
 
   </body>
   <script src="notes.js"></script>
