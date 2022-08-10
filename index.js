@@ -1,3 +1,48 @@
+ // calling internet connectivity classes
+ const internetCon= document.querySelector('.internetCon');
+ const title= document.querySelector('.iContent span');
+ const subTitle= document.querySelector('.iContent p');
+ const onlineIcon= document.querySelector('.online-icon');
+ const closeIcon =document.querySelector('.cancel-icon');
+
+ // using ajax i will send a get request to see url is sending any data as response code 200 or not. using onError-length and status code we will be able to determine it. If not then it is not connected to internet and message will display offline.
+ window.onload=()=>{
+     function ajax(){
+         let xhr= new XMLHttpRequest(); //creating new XML object
+         xhr.open("GET","https://jsonplaceholder.typicode.com/posts",true); //sending get request to this url ->JSON PLACEHOLDER
+         xhr.onload=()=>{ //once AJAX is loaded
+             if (xhr.status==200 && xhr.status<300) { //user is online and getting response code as 200 or less than 300.
+                 // console.log("online");
+         internetCon.classList.remove('offline');
+         title.innerHTML="internet connected";
+         subTitle.innerHTML="you are online";
+         onlineIcon.innerHTML="<i class='bx bx-wifi'></i>";
+
+         closeIcon.onclick=()=>{
+             internetCon.classList.add('hide');
+         }
+             }
+             else{ //user is not online
+                 offline(); //calling offline function   
+             }
+         }
+         xhr.onerror=()=>{ //if passed url is incorrect or returning other error like '404'.
+             // console.log("offline");
+             offline();  //calling offline function
+         }
+         xhr.send();
+     }
+     function offline(){
+         internetCon.classList.add('offline');
+         title.innerHTML="internet disconnected";
+         subTitle.innerHTML="you are offline";
+         onlineIcon.innerHTML="<i class='bx bx-wifi-off'></i>";
+     } 
+     setInterval(()=>{ //using setInterval because it will autoRefresh the message itself without reloading the page after 100ms.
+         ajax(); //calling AJAX function
+     },100); //100ms;
+ }
+
 // removing cross icon from page
 document.querySelector('.cross').style.display="none";
 // script to toggle sidebar 
