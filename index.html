@@ -120,13 +120,15 @@
   <div class="hero-text prevent-select">
     <h1>mohak ahuja</h1>
     <p class="p1"><span class="type"></span></p>
+    <!-- download button -->
     <div class="button">
       <div class="content">
         <i class='bx bx-cloud-download'></i>
-      <span class="btn-text">download CV</span>
+      <span class="btn-text" onclick="vibrate(1000)">download CV</span>
       <div class="countDown"></div>
       </div>
     </div>
+    <!--  -->
   </div>
 </div>
 </section>
@@ -341,6 +343,20 @@ $('.owl-carousel').owlCarousel({
         }
     }
 })
+
+// download button js
+function vibrate(ms){
+  navigator.vibrate(ms);
+
+}
+
+
+
+
+
+
+
+
   </script>
   <script src="index.js"></script>
 </html>
