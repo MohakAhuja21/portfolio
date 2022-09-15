@@ -843,7 +843,9 @@ hr{
 }
 .youtube-container i{
     font-size: 30px;
-
+}
+.y-content{
+    color: white !important;
 }
 .youtube-container a{
     text-decoration: none;
