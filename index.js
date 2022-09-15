@@ -43,8 +43,6 @@
      },100); //100ms;
  }
 
-
-
 // removing cross icon from page
 document.querySelector('.cross').style.display="none";
 // script to toggle sidebar 
