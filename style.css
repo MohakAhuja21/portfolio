@@ -626,6 +626,7 @@ background: linear-gradient(90deg, rgba(6,48,59,1) 0%, rgba(0,240,112,1) 100%, r
     background: var(--primary-color);
 }
 .project{
+    /* height: 80vh; */
     justify-content: center;
     flex-wrap: wrap; 
     padding: 17px 0;
@@ -643,7 +644,7 @@ background: linear-gradient(90deg, rgba(6,48,59,1) 0%, rgba(0,240,112,1) 100%, r
 }
 .project-gap{
     margin-top: 10px;
-    margin-bottom: 15px;
+    /* margin-bottom: 15px; */
 }
 .project-card p{
     text-align: left !important;
