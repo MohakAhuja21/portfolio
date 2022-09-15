@@ -830,3 +830,21 @@ hr{
     color: gray;
     margin-top: 3px;
 }
+
+/* youtube */
+.youtube-card{
+    background: red;
+    padding: 6px;
+    border-radius: 5px;
+    margin-top: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+.youtube-container i{
+    font-size: 30px;
+
+}
+.youtube-container a{
+    text-decoration: none;
+}
