@@ -172,7 +172,7 @@ function myFunc(){
         document.getElementById('message').innerHTML="oops! not more than 30 characters";
         document.getElementById('message').style.color="red";
         return false;
-    }
+    // }
 }
 // name validation
 function validateName(){
