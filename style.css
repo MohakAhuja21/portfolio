@@ -686,7 +686,7 @@ hr{
 }
 .project-live-btn a{
     color: white;
-    font-size: 15px;
+    /* font-size: 15px; */
     text-decoration: none;
 }
 /* codePen icon */
@@ -757,78 +757,6 @@ hr{
 .track div{
     /* it will use entire space available in the row. */
     flex: 1;
-}
-
-/* internet connectivity css */
-.left-con{
-    display: flex;
-    justify-Content: space-between;
-}
-@keyframes show_con{
-    0%{
-        transform: translateX(-100%);
-    }
-}
-.internetCon.hide{
-    animation: hide_con 1s ease-in-out forwards;
-}
-@keyframes hide_con{
-    100%{
-        transform: translateX(100%);
-    }
-}
-.internetCon{
-    animation: show_con 1s ease-in-out forwards;
-    z-index: 10;
-    position: fixed;
-    top: 7px;
-    right: 10px;
-    box-shadow: 1px 0 6px rgba(0, 0, 1, 0.459);
-    padding: 5px;
-    border-left: 5px solid rgb(2, 221, 2);
-    width: 100%;
-    max-width: fit-Content;
-    background: whitesmoke;
-    border-radius: 5px;
-}
-.internetCon.offline{
-    border-color: rgba(255, 0, 0, 0.574);
-}
-.icon{
-    color: gray;
-    font-size: 20px;
-    /* margin-bottom: 5px; */
-}
-.online-icon{
-    margin-bottom: 2px;
-    color: white !important;
-    background: rgb(2, 221, 2);
-    width: fit-Content;
-    border-radius: 50%;
-}
-.internetCon.offline .online-icon{
-    background: rgba(255, 0, 0, 0.574);
-    color: #ccc;
-}
-.online-icon i{
-    padding: 6px;
-}
-.cancel-icon{            
-    border-radius: 50%;
-    cursor: pointer;
-}
-.iContent .hrI{
-    margin-top: 1px;
-    margin-inline: 0;
-    background: rgb(2, 221, 2);
-    border: 0.2px solid transparent;
-}
-.internetCon.offline .iContent .hrI{
-    background: rgba(255, 0, 0, 0.574);
-}
-.iContent p{
-    color: gray;
-    margin-top: 3px;
 }
 
 /* youtube */
