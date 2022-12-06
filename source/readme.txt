@@ -1,4 +1,5 @@
 <!-- source code for wifi detection -->
+
 <!-- html part  -->
         <div class="internetCon">
           <div class="left-con">
@@ -13,7 +14,9 @@
               </div>
           </div>
       </div>
+
 <!--css part   -->
+
 .left-con{
     display: flex;
     justify-Content: space-between;
@@ -84,8 +87,8 @@
     color: gray;
     margin-top: 3px;
 }
-<!--javascript part -->
 
+<!--javascript part -->
  const internetCon= document.querySelector('.internetCon');
  const title= document.querySelector('.iContent span');
  const subTitle= document.querySelector('.iContent p');
