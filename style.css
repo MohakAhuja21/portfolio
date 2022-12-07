@@ -352,7 +352,7 @@ label{
     margin: 0x;
     border-bottom-width: 3.1px;
     color: var(--secondary-color);
-    font-size: calc(3.8rem + (9 - 6) * (50vw - 40rem)/ (130 - 90));
+    font-size: calc(3.7rem + (9 - 6) * (50vw - 40rem)/ (130 - 90));
 }
 /* DOWNLOAD CV BUTTON */
 .button{
