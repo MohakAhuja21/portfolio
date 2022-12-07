@@ -345,6 +345,7 @@ label{
     margin: 0 auto;
     position: relative;
 }
+/* frontend developer text */
 .p1{
     width: fit-content;
     text-decoration-thickness: 1px;
@@ -352,7 +353,7 @@ label{
     margin: 0x;
     border-bottom-width: 3.1px;
     color: var(--secondary-color);
-    font-size: calc(3.7rem + (9 - 6) * (50vw - 40rem)/ (130 - 90));
+    font-size: calc(3.7rem + (9 - 6) * (50vw - 40rem)/ (128 - 90));
 }
 /* DOWNLOAD CV BUTTON */
 .button{
